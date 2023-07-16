@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('assets/fonts/Aquatico-Regular.otf');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+@layer components {
+
+  .navbar-link {
+    @apply flex flex-row relative text-center sm:justify-center;
+  }
+
+  .navbar-icon {
+    @apply relative flex items-center justify-center
+    h-12 w-12 mt-2 mb-2 mx-auto text-color2 rounded-xl
+    transition-all duration-100 ease-linear
+    cursor-pointer shadow-sm shadow-color2 xs:h-11 xs:w-11 ;
+  }
+
+  .navbar-link:hover .navbar-icon {
+    @apply transition-all duration-300 ease-linear shadow-inner shadow-color2 ;
+  }
+
+  .navbar-link.active .navbar-icon {
+    @apply transition-all duration-300 ease-linear shadow-inner shadow-color2 ;
+  }
+
+  .navbar-menu:hover span {
+    margin-left: 0.8rem ;
+    @apply flex text-center sm:hidden md:hidden lg:hidden text-cat;
+  }
+
+  .navbar-menu:hover li {
+    @apply flex justify-start pl-5 sm:pl-0 sm:justify-center md:pl-0 lg:pl-0 md:justify-center lg:justify-center;
+  }
+
+  .navbar-menu:hover .navbar-link {
+    @apply flex justify-start items-center sm:flex-row sm:justify-center ;
+  }
+
+}
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* @media (width <= 600px) { */
