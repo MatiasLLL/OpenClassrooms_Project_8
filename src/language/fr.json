@@ -6,5 +6,23 @@
         "projects": "Projets",
         "contact": "Coordonnees",
         "language": "FR/EN"
+    },
+    "about": {
+        "title1": "Bonjour ! Je m'appelle Matias Larralde et je suis honoré que vous preniez le temps de regarder mon portfolio.",
+        "sentence1": "Je viens de milieux très variés, ayant travaillé dans la restauration, l'organisation d'événements et l'agriculture urbaine.",
+        "sentence2": "J'ai beaucoup grandi en tant qu'être humain grâce à ces expériences et je suis heureux d'avoir acquis de nombreuses compétences que je peux maintenant utiliser dans le développement web.",
+        "sentence3": "Résoudre des problèmes et créer des solutions, seul ou en équipe, ainsi que posséder un esprit créatif et une grande attention aux détails, sont des compétences qui font maintenant partie de moi !",
+        "sentence4": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks. Chaque nouveau jour est un nouveau défi !",
+        "sentence5": "Je sais que j'ai trouvé ma voie dans la programmation."
+    },
+    "skills": {
+        "title2": "Compétences"
+        
+    },
+    "projects": {
+        "title2": "Projets"
     }
+
 }
+
+

@@ -3,13 +3,13 @@
 @tailwind utilities;
 @import url('assets/fonts/Aquatico-Regular.otf');
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 img {
   object-fit: cover;
@@ -23,18 +23,31 @@ img {
 
   .navbar-icon {
     @apply relative flex items-center justify-center
-    h-12 w-12 mt-2 mb-2 mx-auto text-color2 rounded-xl
+    h-12 w-12 mt-2 mb-2 mx-auto text-color9 rounded-xl
     transition-all duration-100 ease-linear
-    cursor-pointer shadow-sm shadow-color2 xs:h-11 xs:w-11 ;
+    cursor-pointer shadow-sm shadow-color9 xs:h-11 xs:w-11 ;
   }
 
   .navbar-link:hover .navbar-icon {
-    @apply transition-all duration-300 ease-linear shadow-inner shadow-color2 ;
+    @apply transition-all duration-100 ease-linear shadow-inner bg-color12/30 shadow-color9 ;
   }
 
   .navbar-link.active .navbar-icon {
-    @apply transition-all duration-300 ease-linear shadow-inner shadow-color2 ;
+    @apply transition-all duration-100 ease-linear bg-color12/30 shadow-inner shadow-color9 ;
   }
+
+  .navbar-link:hover span, .navbar-link.active span  {
+    @apply font-black text-active ;
+  }
+
+
+  /* .navbar-link:hover .navbar-link {
+    @apply border-solid border-t-1 border-b-1 border-color9;
+  }
+
+  .navbar-link.active .navbar-link {
+    
+  } */
 
   .navbar-menu:hover span {
     margin-left: 0.8rem ;

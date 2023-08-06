@@ -5,5 +5,22 @@
         "projects": "Projects",
         "contact": "Contact",
         "language": "EN/FR"
+    },
+    "about": {
+        "title1": "Hi! I'm Matias Larralde and I'm honored that you have a look on my Portfolio.",
+        "sentence1": "I'm coming into the tech industry with a really varied background, from restoration, event setup or even urban farming.",
+        "sentence2": "I grew a lot as a human being through these experiences and I'm glad to have acquired many skills that I can use into Web Development.",
+        "sentence3": "Solving problems and building solutions, on my own or with teammates; as much as having a creative mindset and a strong attention to detail; are skills that become part of me now !",
+        "sentence4": "That builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge !",
+        "sentence5": "I know I found my path into coding."
+    },
+    "skills": {
+        "title2": "Skills"
+        
+    },
+    "projects": {
+        "title2": "Projects"
     }
 }
+
+

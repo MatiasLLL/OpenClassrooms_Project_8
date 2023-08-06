@@ -11,7 +11,7 @@ function Portfolio() {
   return (
     <>
       <NavBar />
-      <main className='mr-20 h-srceen bg-color6 sm:mr-0'>
+      <main className='mr-20 h-srceen bg-color11/50 sm:mr-0 text-color9'>
         <Header />
         <About />
         <Skills />
