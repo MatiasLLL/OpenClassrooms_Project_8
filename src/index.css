@@ -17,6 +17,10 @@ img {
 
 @layer components {
 
+  html {
+    @apply scroll-smooth
+  }
+
   .navbar-link {
     @apply flex flex-row relative text-center sm:justify-center;
   }
@@ -34,7 +38,7 @@ img {
 
   .navbar-link.active .navbar-icon {
     @apply transition-all duration-100 ease-linear bg-color12/30 shadow-inner shadow-color9 ;
-  }
+  } 
 
   .navbar-link:hover span, .navbar-link.active span  {
     @apply font-black text-active ;

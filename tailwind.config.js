@@ -20,8 +20,8 @@ export default {
       'color12': '#b6e6ff',
     },
     fontSize: {
-      'h1': '1.5rem',
-      'h2': '1.25rem',
+      'title': '1.5rem',
+      'link': '1.15rem',
       'cat': '0.85rem',
       'active': '0.95rem',
       // '2xl': '1.563rem',

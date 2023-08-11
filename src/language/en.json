@@ -20,7 +20,26 @@
     },
     "projects": {
         "title2": "Projects"
+    },
+
+
+
+    
+    "footer": {
+        "title": "Contact:",
+        "copyright": "© 2023 Matias Larralde's Portfolio - All rights reserved.",
+        "legal-notice": "Legal notice",
+        "legal-notice-content": {
+            "sentence1": "The site is hosted by ~~~Amazon Web Services Limited Liability Company (LLC)~~~ whose address is as follows:",
+            "sentence2": "~~~Amazon Web Services, Inc. 410 Terry Ave North Seattle , WA 98109-5210 , US.~~~",
+            "sentence3": "Phone number: ~~~+ 33 1 74 18 10 38~~~"
+        },
+        "privacy-policy": "Privacy policy",
+        "privacy-policy-content": {
+            "sentence1": "We do not collect any personal information from users of this website.",
+            "sentence2": "We do not use cookies to collect any personal information.",
+            "sentence3": "If you have any questions or concerns about our privacy policy, please contact us at matias.larralde97@gmail.com."
+        }
     }
 }
-
 
