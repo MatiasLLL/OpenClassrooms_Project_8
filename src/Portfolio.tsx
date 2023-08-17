@@ -5,13 +5,13 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 // import './i18n'
-
+// bg-color11/50
 
 function Portfolio() {
   return (
     <>
       <NavBar />
-      <main className='mr-20 h-full bg-color11/50 sm:mr-0 sm:mb-20 text-color9'>
+      <main className='mr-20 h-full bg-colorBg sm:mr-0 sm:mb-20 text-color13'>
         <Header />
         <About />
         <Skills />

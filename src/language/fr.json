@@ -19,11 +19,52 @@
         "title2": "Compétences"
         
     },
-    "projects": {
-        "title2": "Projets"
+    "soft-skills" : {
+        "sentence1": "Aimer résoudre des problèmes et trouver des solutions",
+        "sentence2": "Savoir apprendre tout seul",
+        "sentence3": "Savoir travailler en équipe",
+        "sentence4": "Avoir un esprit créatif",
+        "sentence5": "Avoir le sens du détail"
     },
-
-
+    "projects": {
+        "title2": "Projets",
+        "github-link": "Lien vers le repository GitHub",
+        "booki": {
+            "title" : "OpenClassrooms - Projet 2",
+            "description": "vvkhvk",
+            "website-link": "Lien vers le site"
+        },
+        "sophie-bluel": {
+            "title" : "OpenClassrooms - Projet 3",
+            "description": "vjkvjk",
+            "website-link": "Lien vers le site"
+        },
+        "qwenta": {
+            "title" : "OpenClassrooms - Projet 4",
+            "description": "vvkhvk",
+            "website-link": "Cliquez pour télécharger le projet"
+        },
+        "nina-carducci": {
+            "title" : "OpenClassrooms - Projet 5",
+            "description": "vvkhvk",
+            "website-link": "Lien vers le site"
+        },
+        "kasa": {
+            "title" : "OpenClassrooms - Projet 6",
+            "description": "vvkhvk",
+            "website-link": "Lien vers le site"
+        },
+        "mon-vieux-grimoire": {
+            "title" : "OpenClassrooms - Projet 7",
+            "description": "vvkhvk",
+            "website-link": "Lien vers le site"
+        },
+        "my-portfolio": {
+            "title" : "OpenClassrooms - Projet 8",
+            "description": "vvkhvk",
+            "website-link": "Vous êtes déjà sur le portfolio !"
+        }
+    },
     "footer": {
         "title": "Coordonnées:",
         "copyright": "© 2023 Portfolio - Matias Larralde - Tous droits réservés.",

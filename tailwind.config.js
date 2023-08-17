@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     colors: {
+      'colorBg': '#3768a1',
       'color1': '#00d275',
       'color2': '#af52ce',
       'color3': '#5cf8d7',
@@ -18,13 +19,19 @@ export default {
       'color10': '#80afcf',
       'color11': '#6fcdff',
       'color12': '#b6e6ff',
+      'color13': '#cdf6ff',
+      'color14': '#3768a1',
+      'color15': '#000050',
+      'color16': '#0057af',
+      'color17': '#223576',
+      'color18': '#233f5c',
     },
     fontSize: {
       'title': '1.5rem',
       'link': '1.15rem',
       'cat': '0.85rem',
       'active': '0.95rem',
-      // '2xl': '1.563rem',
+      'skills': '1.05rem',
       // '3xl': '1.953rem',
       // '4xl': '2.441rem',
     },

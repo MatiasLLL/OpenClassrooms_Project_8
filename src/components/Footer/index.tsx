@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react';
-import { IconType } from 'react-icons';
 import { useTranslation } from 'react-i18next';
+import { IconType } from 'react-icons';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
@@ -11,9 +11,9 @@ function Footer() {
         link: string;
     }
     const LinkFooter = ({icon, text, link}: LinkFooterProps) => (
-        <a href={link} className='flex flex-row items-center text-link sm:text-active hover:text-color1'>
+        <a href={link} className='flex flex-row items-center text-link sm:text-active hover:text-color13/60'>
             <i className='mr-3'>{icon}</i>
-            <span className='text-color9 text-center cursor-pointer'>{text}</span>
+            <span className='text-center cursor-pointer'>{text}</span>
         </a>
     )
     const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +24,7 @@ function Footer() {
     //     window.scroll(0, 0);
     // };
     return (
-        <footer id='contact' className='flex flex-col justify-start mx-24 sm:mx-8'>
+        <footer id='contact' className='flex flex-col justify-start mx-24 pt-14 sm:mx-8'>
             <div className='flex flex-row justify-between sm:justify-around my-7 w-3/4 sm:w-full'>
                 <h2 className='text-title sm:mr-0 sm:text-link sm:hidden'>{t('footer.title')}</h2>
                 <LinkFooter link={'https://linkedin.com/in/matias-larralde'} icon={<FaLinkedin size="28" />} text={'Linkedin'} />

@@ -16,7 +16,7 @@ function SwitchLanguage() {
         <li className='flex justify-center items-center py-1 text-center hover:justify-start'>
             <button className={'navbar-link'} onClick={changeLanguage}>
                 <i className='navbar-icon'>{<MdLanguage size="28" />}</i>
-                <span className='text-color9 hidden relative text-center cursor-pointer'>{t('categories.language')}</span>
+                <span className='hidden relative text-center cursor-pointer'>{t('categories.language')}</span>
             </button>
         </li>
     );

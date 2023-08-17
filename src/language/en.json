@@ -18,13 +18,52 @@
         "title2": "Skills"
         
     },
-    "projects": {
-        "title2": "Projects"
+    "soft-skills" : {
+        "sentence1": "Solving problems and building solutions",
+        "sentence2": "Self-learning and overcome fallbacks",
+        "sentence3": "Working well in a team",
+        "sentence4": "Having a creative mindset",
+        "sentence5": "Having attention to detail"
     },
-
-
-
-    
+    "projects": {
+        "title2": "Projects",
+        "github-link": "Link to the GitHub repository",
+        "booki": {
+            "title" : "OpenClassrooms - Project 2",
+            "description": "vvkhvk",
+            "website-link": "Link to the website"
+        },
+        "sophie-bluel": {
+            "title" : "OpenClassrooms - Project 3",
+            "description": "vjkvjk",
+            "website-link": "Link to the website"
+        },
+        "qwenta": {
+            "title" : "OpenClassrooms - Project 4",
+            "description": "vvkhvk",
+            "website-link": "Click to download the project"
+        },
+        "nina-carducci": {
+            "title" : "OpenClassrooms - Project 5",
+            "description": "vvkhvk",
+            "website-link": "Link to the website"
+        },
+        "kasa": {
+            "title" : "OpenClassrooms - Project 6",
+            "description": "vvkhvk",
+            "website-link": "Link to the website"
+        },
+        "mon-vieux-grimoire": {
+            "title" : "OpenClassrooms - Project 7",
+            "description": "vvkhvk",
+            "website-link": "Link to the website"
+        },
+        "my-portfolio": {
+            "title" : "OpenClassrooms - Project 8",
+            "description": "vvkhvk",
+            "website-link": "You already are one the portfolio !"
+        }
+    },
     "footer": {
         "title": "Contact:",
         "copyright": "© 2023 Matias Larralde's Portfolio - All rights reserved.",
