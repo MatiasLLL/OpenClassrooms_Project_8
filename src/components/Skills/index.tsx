@@ -1,15 +1,23 @@
-import { ReactElement } from 'react';
+import { ReactElement, useRef, useState  } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IconType } from 'react-icons';
+import { useScroll} from '@react-hooks-library/core';
 import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiJavascript } from "react-icons/si";
 // import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
 // import viteLogo from '/vite.svg'
 // <img src={viteLogo} className="logo" alt="Vite logo" />
 // , useState
+// import { useScroll} from 'tailwindcss-animated';
+
 
 function Skills() {
     const { t } = useTranslation()
+    const box = useRef<HTMLDivElement | null>(null)
+    const [scroll, setScroll] = useState({ x: 0, y: 0 })
+    useScroll(box, ({ scrollX, scrollY }) =>
+        setScroll({ x: scrollX, y: scrollY })
+    )
     type SkillsCardProps = {
         icon: ReactElement<IconType>;
         text: string;
@@ -17,18 +25,18 @@ function Skills() {
     const SkillsCard = ({icon, text}: SkillsCardProps) => (
         <div className='flex flex-col items-center justify-center text-skills sm:text-active my-5'>
             <i className='mb-1 text-color13'>{icon}</i>
-            <span className='text-color13 text-center cursor-pointer'>{text}</span>
+            <span className='text-color13 text-center'>{text}</span>
         </div>
     )
     return (
         <section id="skills" className='flex flex-col justify-around mx-24 my-7'>
-                <h2 className='flex flex-row text-title mt-8 mb-6 items-center w-full text-color13'>
+                <h2 className='flex flex-row text-title mt-5 mb-6 items-center w-full text-color13'>
                     <span className='inline-block w-1/5 h-0.5 bg-color13 mr-6 rounded-full'></span>
                     {t('skills.title2')}
                     <span className='inline-block w-4/5 h-0.5 bg-color13 ml-6 rounded-full'></span>
                 </h2>
-                <div className='flex flex-row'>
-                    <section className='flex flex-col w-1/2 px-6'>
+                <div className='skills-container flex flex-row' ref={box}>
+                    <section className='flex flex-col w-1/2 px-6 transition-transform duration-700 ease-out transform from--translate-x-100 to-translate-x-0'>
                         <div className='flex justify-center w-11/12'>
                             <SkillsCard icon={<FaHtml5 size="34" />} text={'HTML'} />
                         </div>
@@ -52,12 +60,18 @@ function Skills() {
                             <SkillsCard icon={<FaNodeJs size="30" />} text={'Node - Express'} />
                         </div>
                     </section>
-                    <section className='flex flex-col w-1/2 place-content-evenly italic pl-20 pr-12 text-color13'>
-                        <p className='flex flex-row justify-start'>{t('soft-skills.sentence1')}</p>
-                        <p className='flex flex-row justify-end'>{t('soft-skills.sentence2')}</p>
-                        <p className='flex flex-row justify-start'>{t('soft-skills.sentence3')}</p>
-                        <p className='flex flex-row justify-end'>{t('soft-skills.sentence4')}</p>
-                        <p className='flex flex-row justify-start'>{t('soft-skills.sentence5')}</p>
+                    <section className='flex flex-row w-1/2 place-content-evenly pl-1 pr-2 py-7 text-color13 animate-[slideRight_0.5s_ease-out]'>
+                        <div className='w-1/12 flex flex-row ml-4 mr-8'>
+                            <span className='inline-block w-1 h-full bg-gradient-to-b from-color13/40 to-color13/70 mx-2 rounded-full'></span>
+                            <span className='inline-block w-1 h-full bg-gradient-to-t from-color13/40 to-color13/70 ml-0.5 rounded-full'></span>
+                        </div>
+                        <ul className='flex flex-col place-content-evenly w-11/12 my-6 text-active list-disc font-semibold'>
+                            <li className='px-3'>{t('soft-skills.sentence1')}</li>
+                            <li className='px-3'>{t('soft-skills.sentence2')}</li>
+                            <li className='px-3'>{t('soft-skills.sentence3')}</li>
+                            <li className='px-3'>{t('soft-skills.sentence4')}</li>
+                            <li className='px-3'>{t('soft-skills.sentence5')}</li>
+                        </ul>
                     </section>
                 </div>
       </section>

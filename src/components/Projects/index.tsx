@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import ProjectComponent from '../../components/ProjectComponent'
+import ContentModal from '../../components/ContentModal'
 import logoMyPortfolio from '../../assets/logo-MyPortfolio.png'
 import logoBooki from '../../assets/logo-Booki.png'
 import logoMonVieuxGrimoir from '../../assets/logo-MonVieuxGrimoir.png'
@@ -6,16 +8,14 @@ import logoKasa from '../../assets/logo-Kasa.png'
 import logoNinaCarducci from '../../assets/logo-NinaCarducci.png'
 import logoMenuMakerByQwenta from '../../assets/logo-MenuMakerByQwenta.png'
 import logoSophieBluel from '../../assets/logo-SophieBluel.png'
-import ContentModal from '../../components/ContentModal'
 import { FaGithub } from "react-icons/fa";
-import ProjectComponent from '../../components/ProjectComponent'
 
 function Projects() {
     const { t } = useTranslation()
 
     return (
         <section id="projects" className='flex flex-col justify-around mx-24 my-12 '>
-            <h2 className='flex flex-row text-title my-8 pb-6 items-center w-full'>
+            <h2 className='flex flex-row text-title mt-5 mb-8 pb-6 items-center w-full'>
                 <span className='inline-block w-1/5 h-0.5 bg-color13 mr-6 rounded-full'></span>
                 {t('projects.title2')}
                 <span className='inline-block w-4/5 h-0.5 bg-color13 ml-6 rounded-full'></span>
@@ -24,33 +24,33 @@ function Projects() {
                 <div className='flex flex-col gap-12'>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoMyPortfolio} logoAlt={'My Portfolio'} content={
-                            <ContentModal logo={logoMyPortfolio} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoMyPortfolio} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
                             }
                         />
                     </div>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoKasa} logoAlt={'Kasa'} content={
-                            <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
                             }
                         />
                     </div>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoSophieBluel} logoAlt={'Sophie Bluel - Architecte d’intérieur'} content={
-                            <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
                             }
                         />
                     </div>
                 </div>
                 <div className='flex items-center justify-center gap-12'>
                     <ProjectComponent logo={logoNinaCarducci} logoAlt={'Nina Carducci - Photographe'} content={
-                        <ContentModal logo={logoNinaCarducci} logoAlt={'NinaCarducci - Photographe'} projectName={'nina-carducci'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                        <ContentModal logo={logoNinaCarducci} logoAlt={'NinaCarducci - Photographe'} projectName={'nina-carducci'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_5'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_5'} />
                         }
                     />
                 </div>
                 <div className='flex flex-col gap-12'>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} content={
-                            <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
                             }
                         />
                     </div>
@@ -62,7 +62,7 @@ function Projects() {
                     </div>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoBooki} logoAlt={'Booki'} content={
-                            <ContentModal logo={logoBooki} logoAlt={'Booki'} projectName={'booki'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoBooki} logoAlt={'Booki'} projectName={'booki'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_2'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_2'} />
                             }
                         />
                     </div>

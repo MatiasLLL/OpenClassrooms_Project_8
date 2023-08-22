@@ -29,9 +29,9 @@ export default {
     fontSize: {
       'title': '1.5rem',
       'link': '1.15rem',
-      'cat': '0.85rem',
-      'active': '0.95rem',
       'skills': '1.05rem',
+      'active': '0.95rem',
+      'cat': '0.85rem',
       // '3xl': '1.953rem',
       // '4xl': '2.441rem',
     },
@@ -46,11 +46,21 @@ export default {
       'sm': {'max': '639px'},
       'xs': {'max': '450px'},
     },
+    keyframes: {
+      slideLeft: {
+        '0%': { transform: 'translateX(-100%)', opacity: 0},
+        '100%': { transform: 'translateX(0)', opacity: 1 },
+      },
+      slideRight: {
+        '0%': { transform: 'translateX(100%)', opacity: 0 },
+        '100%': { transform: 'translateX(0)', opacity: 1 },
+      }
+    
+    },
     extend: {},
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
-    // require('tailwind-scrollbar'),
   ],
 }
 
@@ -67,3 +77,24 @@ export default {
 
 // /** @type {import('tailwindcss').Config} */
 // export default
+
+// @keyframes slide-in-left {
+//   0% {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slide-in-right {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }

@@ -16,24 +16,27 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
     const { t } = useTranslation()
 
     return (
-    <div className='flex flex-col'>
-        <div className="flex">
+    <div className='flex flex-col h-full px-10 pt-10 pb-4 justify-center text-color18'>
+        <div className="flex h-4/5">
             <div className="w-2/3">
-                <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">{t(`projects.${projectName}.title`)}</Dialog.Title>
-                <p className="text-sm text-gray-500">
+                <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 mb-3">{t(`projects.${projectName}.title`)}</Dialog.Title>
+                <p className="text-sm mr-8 leading-relaxed">
                 {t(`projects.${projectName}.description`)}
                 </p>
             </div>
-            <a href={websiteLink} className="w-1/3">
-                <img className='px-3 max-h-11 mt-px' src={logo} alt={logoAlt} />
-                <p className='italic'>{t(`projects.${projectName}.website-link`)}</p>
+            <a href={websiteLink} target="_blank" className="w-1/3 outline-none flex flex-col items-center">
+                <img className='px-3 max-h-11 mt-px mb-3' src={logo} alt={logoAlt} />
+                <p className='italic text-active text-center mx-2'>{t(`projects.${projectName}.website-link`)}</p>
             </a>
-            </div>
-        <div className='flex'>
-        <a href={gitHubLink} className='flex flex-row items-center text-link sm:text-active hover:text-color13/60'>
-            <i className='mr-3'>{icon}</i>
-            <span className='text-center cursor-pointer'>{t('projects.github-link')}</span>
-        </a>
+        </div>
+        <div className='flex flex-col justify-around items-center h-1/5'>
+            <span className='inline-block w-full h-0.5 bg-gradient-to-r from-color17/40 to-color17/70 rounded-full'></span>
+            {gitHubLink !== '' && (
+                <a href={gitHubLink} target="_blank" className='flex flex-row items-center text-link sm:text-active outline-none'>
+                    <i className='mr-5'>{icon}</i>
+                    <span className='text-center cursor-pointer'>{t('projects.github-link')}</span>
+                </a>
+            )}
         </div>
     </div>
     )

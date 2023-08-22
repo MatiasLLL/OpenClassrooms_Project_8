@@ -30,38 +30,38 @@
         "github-link": "Link to the GitHub repository",
         "booki": {
             "title" : "OpenClassrooms - Project 2",
-            "description": "vvkhvk",
+            "description": "This was my first project where I had to turn a mockup into a responsive web page using HTML and CSS, including mobile, tablet, and desktop versions. I ensured web semantics, compatibility with Google Chrome and Mozilla Firefox, and code validity with W3C HTML and CSS validators.",
             "website-link": "Link to the website"
         },
         "sophie-bluel": {
             "title" : "OpenClassrooms - Project 3",
-            "description": "vjkvjk",
+            "description": "For this project, I used JavaScript to implement several features, such as dynamically fetching data from an API and filtering it. I also integrated a login page and a modal that allows to add, modify, and delete data, both on the page and on the API.",
             "website-link": "Link to the website"
         },
         "qwenta": {
             "title" : "OpenClassrooms - Project 4",
-            "description": "vvkhvk",
+            "description": "This project is the only one that does not contain any code, consisting of the planning of website development. Therefore, I wrote the technical specifications, researched various technical aspects of the project, and set up a Kanban board for project management.",
             "website-link": "Click to download the project"
         },
         "nina-carducci": {
             "title" : "OpenClassrooms - Project 5",
-            "description": "vvkhvk",
+            "description": "For this project, I had to optimize the website's images, code, and structure. I also debugged the site's functionalities that were not working and added local SEO and social media integration using meta tags and Schema.org.",
             "website-link": "Link to the website"
         },
         "kasa": {
             "title" : "OpenClassrooms - Project 6",
-            "description": "vvkhvk",
+            "description": "For this React project, I used React Router to configure page navigation, created React components for different pages, added CSS animations with SASS, and implemented a 404 page for non-existent routes.",
             "website-link": "Link to the website"
         },
         "mon-vieux-grimoire": {
             "title" : "OpenClassrooms - Project 7",
-            "description": "vvkhvk",
+            "description": "This was the last project of my OpenClassrooms training with a roadmap. This time, I built an Express server, a RESTful API, set up an authentication system, and implemented CRUD operations securely.",
             "website-link": "Link to the website"
         },
         "my-portfolio": {
             "title" : "OpenClassrooms - Project 8",
-            "description": "vvkhvk",
-            "website-link": "You already are one the portfolio !"
+            "description": "This portfolio was my first independent project from start to finish. I initialized it with Vite and learned new technologies such as TypeScript and Tailwind. I implemented important features to me such as the translation with the i18n library; as well as the modal that provides details on each project I built during my training.",
+            "website-link": "You already are on my portfolio !"
         }
     },
     "footer": {

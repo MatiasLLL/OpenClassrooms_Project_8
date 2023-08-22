@@ -11,7 +11,7 @@ function Footer() {
         link: string;
     }
     const LinkFooter = ({icon, text, link}: LinkFooterProps) => (
-        <a href={link} className='flex flex-row items-center text-link sm:text-active hover:text-color13/60'>
+        <a href={link} target="_blank" className='flex flex-row items-center text-link sm:text-active hover:text-color13/60'>
             <i className='mr-3'>{icon}</i>
             <span className='text-center cursor-pointer'>{text}</span>
         </a>

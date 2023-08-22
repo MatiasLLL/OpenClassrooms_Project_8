@@ -31,37 +31,37 @@
         "github-link": "Lien vers le repository GitHub",
         "booki": {
             "title" : "OpenClassrooms - Projet 2",
-            "description": "vvkhvk",
+            "description": "Ce fût mon premier projet où j'ai dû transformer une maquette en une page web responsive en utilisant HTML et CSS, comprenant versions mobiles, tablettes et ordinateurs. J'ai veillé à respecter la sémantique web, la compatibilité avec Google Chrome et Mozilla Firefox, et vérifié mon code avec les validateurs HTML et CSS du W3C.",
             "website-link": "Lien vers le site"
         },
         "sophie-bluel": {
             "title" : "OpenClassrooms - Projet 3",
-            "description": "vjkvjk",
+            "description": "Pour ce projet, j'ai implémenté plusieurs fonctionnalités en JavaScript, notamment la récupération de données depuis une API avec fetch, ainsi que le filtrage de celle-ci. J'ai également intégré une page de connexion et une modale permettant l'ajout, la modification et la suppression de données, à la fois sur la page et sur l'API.",
             "website-link": "Lien vers le site"
         },
         "qwenta": {
             "title" : "OpenClassrooms - Projet 4",
-            "description": "vvkhvk",
+            "description": "Ce projet est le seul qui ne contient pas de code, consitant en la planification du développement d'un site. J'ai donc réalisé les spécifications techniques, effectué une veille des différents aspects techniques du projet, et mis en place un tableau Kanban pour la gestion du projet.",
             "website-link": "Cliquez pour télécharger le projet"
         },
         "nina-carducci": {
             "title" : "OpenClassrooms - Projet 5",
-            "description": "vvkhvk",
+            "description": "Pour ce projet, j'ai dû optimiser les images du site, son code ainsi que sa structure. J'ai également débogué les fonctionnalités du site qui ne fonctionnaient pas et ajouté le référencement local et les réseaux sociaux en utilisant les balises meta et Schema.org.",
             "website-link": "Lien vers le site"
         },
         "kasa": {
             "title" : "OpenClassrooms - Projet 6",
-            "description": "vvkhvk",
+            "description": "Pour ce projet React, j'ai utilisé React Router pour configurer la navigation entre les pages, conçu des composants React utilisés ensuite dans les différentes pages, réalisé des animations CSS avec SASS, et implémenté une page 404 pour les routes inexistantes.",
             "website-link": "Lien vers le site"
         },
         "mon-vieux-grimoire": {
             "title" : "OpenClassrooms - Projet 7",
-            "description": "vvkhvk",
+            "description": "Ce fût le dernier projet de ma formation OpenClassrooms avec une feuille de route. Cette fois-ci, j'ai conçu un serveur Express, une API RESTful, mis en place un système d'authentification et implémenté des opérations CRUD de manière sécurisée.",
             "website-link": "Lien vers le site"
         },
         "my-portfolio": {
             "title" : "OpenClassrooms - Projet 8",
-            "description": "vvkhvk",
+            "description": "Ce portfolio était mon premier projet libre de A à Z. Je l'ai initialisé avec Vite et j'ai appris de nouvelles technologies telles que TypeScript et Tailwind. Les fonctionnalités qui me tenait le plus à cœur d'intégrer sont la traduction avec la librairie i18n; ainsi que la fenêtre qui apporte des précisions sur chacun des projets réalisé lors de ma formation.",
             "website-link": "Vous êtes déjà sur le portfolio !"
         }
     },
