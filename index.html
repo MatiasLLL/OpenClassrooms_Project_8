@@ -5,28 +5,106 @@
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" id="meta-description" content="">
+	<meta name="description" class="description" content="">
+	<!-- Open graph tags for social media sharing -->
+	<meta property="og:title" class="title" content="">
+	<meta property="og:description" class="description" content="">
+	<meta property="og:site" content="Matias Larralde">
+	<meta property="og:image" content="https://matias-larralde.fr/src/assets/pic-bay-bridge.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://matias-larralde.fr">
+	<meta property="og:locale" id="locale-tag" content="">
+	<!-- Twitter card tags for social media sharing -->
+	<meta name="twitter:title" class="title" content="">
+	<meta name="twitter:description" class="description" content="">
+	<meta name="twitter:site" content="@Matias Larralde">
+	<meta name="twitter:image" content="https://matias-larralde.fr/src/assets/pic-bay-bridge.jpg">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@Matias Larralde">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "person",
+		  "name": "Matias Larralde",
+		  <!-- "jobTitle": "", -->
+		  "url": "https://matias-larralde.fr",
+		  
+		  <!-- "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "",
+			"addressLocality": "",
+			"addressRegion": "",
+			"postalCode": "",
+			"addressCountry": "France"
+			}, -->
+		  <!-- "email": "",
+		  "telephone": "",
+		  "birthDate": "", -->
+
+		  "itemListElement": [
+			{
+				"@type": "Projects",
+				"position": 1,
+				"item": {
+					"@type": "Article",
+					"headline": "Shooting photo"
+				}
+			},
+			{
+				"@type": "Projects",
+				"position": 2,
+				"item": {
+					"@type": "Article",
+					"headline": "Retouches"
+				}
+			},
+			{
+				"@type": "Projects",
+				"position": 3,
+				"item": {
+					"@type": "Article",
+					"headline": "Album photos"
+				}
+			}
+		  ]
+		}
+	</script>
+
+
+
 </head>
-<body class='p-0 m-0 overflow-y-scroll bg-colorBg scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
+<body class='p-0 m-0 overflow-y-scroll bg-colorBg font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx" defer></script>
 	<script>
 		let userLang = navigator.language || navigator.userLanguage;
 		let lang = userLang || 'en'; // set default language to English
 		document.getElementById("html-tag").lang = lang;
+		document.getElementById("locale-tag").setAttribute("content", lang);
+		
 		// Function to change the page <head> content based on the user's language
 		function changeTitle() {
 			let pageTitle = document.getElementById("page-title");
-			let metaDescription = document.getElementById("meta-description");
-			let description = '';
+			let titleContent = '';
+			let descriptionContent = '';
 			if (userLang.startsWith("fr")) {
 				pageTitle.innerText = "Matias Larralde - Portfolio";
-				description = "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.";
+				titleContent = "Matias Larralde - Portfolio";
+				descriptionContent = "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.";
 			} else {
 				pageTitle.innerText = "Matias Larralde's Portfolio";
-				description = "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.";
+				titleContent = "Matias Larralde's Portfolio";
+				descriptionContent = "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.";
 			}
-			metaDescription.setAttribute("content", description || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."); // set default description if description is empty
+			// Set the metadata for social media sharing based on the user's language
+			let title = document.querySelectorAll(".title");
+			title.forEach((e) => e.setAttribute("content", titleContent || "Matias Larralde's Portfolio"));
+			let description = document.querySelectorAll(".description");
+			description.forEach((e) => e.setAttribute("content", descriptionContent || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."));
 		}
 		changeTitle();
 	</script>

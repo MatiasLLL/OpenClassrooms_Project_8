@@ -5,10 +5,10 @@
         "description": ""
     },
     "categories": {
-        "about": "A Propos",
-        "skills": "Competences",
+        "about": "À Propos",
+        "skills": "Compétences",
         "projects": "Projets",
-        "contact": "Coordonnees",
+        "contact": "Coordonnées",
         "language": "FR/EN"
     },
     "about": {

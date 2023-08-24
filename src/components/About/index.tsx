@@ -23,3 +23,8 @@ function About() {
 }
 
 export default About
+
+// Salut! Je suis Matias Larralde et je suis heureux que vous regardiez mon portfolio. Je viens de l'industrie de la technologie avec une expérience très variée, de la restauration, à la mise en place d'événements ou même l'agriculture urbaine.
+// J'ai beaucoup grandi en tant qu'être humain grâce à ces expériences et je suis heureux d'avoir acquis de nombreuses compétences que je peux utiliser dans le développement Web.
+// Cela renforce ma soif d'apprendre et de maîtriser de nouveaux langages de codage ou frameworks. Chaque nouveau jour est un nouveau défi!
+// Je sais que j'ai trouvé ma voie dans la programmation."

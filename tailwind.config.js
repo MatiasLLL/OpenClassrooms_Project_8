@@ -37,7 +37,8 @@ export default {
       // '4xl': '2.441rem',
     },
     fontFamily: {
-      'aquatico': ['Aquatico', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
+      'satoshi': ['Satoshi', 'sans-serif'],
     },
     screens: {
       '2xl': {'max': '1535px'},

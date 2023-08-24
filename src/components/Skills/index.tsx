@@ -85,7 +85,7 @@ function Skills() {
                         <span className='inline-block w-1 h-full bg-gradient-to-b from-color13/40 to-color13/70 mx-2 rounded-full'></span>
                         <span className='inline-block w-1 h-full bg-gradient-to-t from-color13/40 to-color13/70 ml-0.5 rounded-full'></span>
                     </div>
-                    <motion.ul className='flex flex-col place-content-evenly w-11/12 my-6 text-active list-disc font-semibold' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
+                    <motion.ul className='flex flex-col place-content-evenly w-11/12 my-6 list-disc text-skills font-normal' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
                         <li className='px-3'>{t('soft-skills.sentence1')}</li>
                         <li className='px-3'>{t('soft-skills.sentence2')}</li>
                         <li className='px-3'>{t('soft-skills.sentence3')}</li>
