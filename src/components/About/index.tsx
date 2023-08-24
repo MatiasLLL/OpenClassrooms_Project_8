@@ -6,7 +6,7 @@ import picBayBridge from '../../assets/pic-bay-bridge.jpg'
 function About() {
     const { t } = useTranslation()
         return (
-            <section className='flex flex-row justify-around text-color17 mx-24 my-9 bg-color13 rounded-2xl p-8 shadow-inner shadow-color15/30'>
+            <section className='flex flex-row justify-around text-color17 mx-24 mt-9 mb-14 bg-color13 rounded-2xl p-8 shadow-inner shadow-color15/30'>
                 <div className='w-3/5'>
                     <h1 className='text-title mb-3'>{t('about.title1')}</h1>
                     <p>

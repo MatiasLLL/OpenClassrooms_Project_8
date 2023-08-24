@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matias Larralde's Portfolio</title>
-  </head>
-  <body class='p-0 m-0 overflow-y-scroll scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="" id="html-tag" prefix="og: http://ogp.me/ns#">
+<head>
+	<title id="page-title"></title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" id="meta-description" content="">
+</head>
+<body class='p-0 m-0 overflow-y-scroll bg-colorBg scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx" defer></script>
+	<script>
+		let userLang = navigator.language || navigator.userLanguage;
+		let lang = userLang || 'en'; // set default language to English
+		document.getElementById("html-tag").lang = lang;
+		// Function to change the page <head> content based on the user's language
+		function changeTitle() {
+			let pageTitle = document.getElementById("page-title");
+			let metaDescription = document.getElementById("meta-description");
+			let description = '';
+			if (userLang.startsWith("fr")) {
+				pageTitle.innerText = "Matias Larralde - Portfolio";
+				description = "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.";
+			} else {
+				pageTitle.innerText = "Matias Larralde's Portfolio";
+				description = "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.";
+			}
+			metaDescription.setAttribute("content", description || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."); // set default description if description is empty
+		}
+		changeTitle();
+	</script>
+</body>
 </html>

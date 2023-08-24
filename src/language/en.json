@@ -1,4 +1,8 @@
 {
+    "head": {
+        "title": "Matias Larralde's Portfolio",
+        "description": ""
+    },
     "categories": {
         "about": "About",
         "skills": "Skills",
@@ -7,12 +11,12 @@
         "language": "EN/FR"
     },
     "about": {
-        "title1": "Hi! I'm Matias Larralde and I'm honored that you have a look on my Portfolio.",
-        "sentence1": "I'm coming into the tech industry with a really varied background, from restoration, event setup or even urban farming.",
-        "sentence2": "I grew a lot as a human being through these experiences and I'm glad to have acquired many skills that I can use into Web Development.",
-        "sentence3": "Solving problems and building solutions, on my own or with teammates; as much as having a creative mindset and a strong attention to detail; are skills that become part of me now !",
-        "sentence4": "That builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge !",
-        "sentence5": "I know I found my path into coding."
+        "title1": "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.",
+        "sentence1": "I'm coming into the tech industry with a very diversified background, ranging from restoration, event setup to even urban farming",
+        "sentence2": "I grew a lot as a human having had such experiences and I'm glad to have acquired many skills that I can use into Web Development.",
+        "sentence3": "This builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge !",
+        "sentence4": "FORMATION OPENCLASSROOMS",
+        "sentence5": "I know that I have found my path into programming."
     },
     "skills": {
         "title2": "Skills"
@@ -31,37 +35,51 @@
         "booki": {
             "title" : "OpenClassrooms - Project 2",
             "description": "This was my first project where I had to turn a mockup into a responsive web page using HTML and CSS, including mobile, tablet, and desktop versions. I ensured web semantics, compatibility with Google Chrome and Mozilla Firefox, and code validity with W3C HTML and CSS validators.",
-            "website-link": "Link to the website"
+            "website-link": "Link to the website",
+            "difficulties": "I haven't really encountered any difficulties.",
+            "technologies": "I used HTML and CSS for this project."
         },
         "sophie-bluel": {
             "title" : "OpenClassrooms - Project 3",
             "description": "For this project, I used JavaScript to implement several features, such as dynamically fetching data from an API and filtering it. I also integrated a login page and a modal that allows to add, modify, and delete data, both on the page and on the API.",
-            "website-link": "Link to the website"
+            "website-link": "Link to the website",
+            "difficulties": "I encountered an issue after pushing my backend to GitHub, so I created a new repository for this project",
+            "technologies": "I used HTML, CSS  and JavaScript for this project."
         },
         "qwenta": {
             "title" : "OpenClassrooms - Project 4",
             "description": "This project is the only one that does not contain any code, consisting of the planning of website development. Therefore, I wrote the technical specifications, researched various technical aspects of the project, and set up a Kanban board for project management.",
-            "website-link": "Click to download the project"
+            "website-link": "Click to download the project",
+            "difficulties": "I had difficulties writing my technical specifications correctly, but after doing good research, I succeeded!",
+            "technologies": "I used Google Slides, Notion and Wakelet for this project."
         },
         "nina-carducci": {
             "title" : "OpenClassrooms - Project 5",
             "description": "For this project, I had to optimize the website's images, code, and structure. I also debugged the site's functionalities that were not working and added local SEO and social media integration using meta tags and Schema.org.",
-            "website-link": "Link to the website"
+            "website-link": "Link to the website",
+            "difficulties": "It took me some time to master picture optimization.",
+            "technologies": "I used HTML, CSS, and JavaScript, along with various analytical tools such as Google Lighthouse."
         },
         "kasa": {
             "title" : "OpenClassrooms - Project 6",
             "description": "For this React project, I used React Router to configure page navigation, created React components for different pages, added CSS animations with SASS, and implemented a 404 page for non-existent routes.",
-            "website-link": "Link to the website"
+            "website-link": "Link to the website",
+            "difficulties": "It wasn't easy for me to fetch the data of a property, but with perseverance, I succeeded.",
+            "technologies": "I used React.js and Sass for this project."
         },
         "mon-vieux-grimoire": {
             "title" : "OpenClassrooms - Project 7",
             "description": "This was the last project of my OpenClassrooms training with a roadmap. This time, I built an Express server, a RESTful API, set up an authentication system, and implemented CRUD operations securely.",
-            "website-link": "Link to the website"
+            "website-link": "Link to the website",
+            "difficulties": "I had trouble with image optimization using Sharp, but once I figured out how to correctly name the optimized file, everything worked!",
+            "technologies": "I used Node.js and Express.js for this project."
         },
         "my-portfolio": {
             "title" : "OpenClassrooms - Project 8",
             "description": "This portfolio was my first independent project from start to finish. I initialized it with Vite and learned new technologies such as TypeScript and Tailwind. I implemented important features to me such as the translation with the i18n library; as well as the modal that provides details on each project I built during my training.",
-            "website-link": "You already are on my portfolio !"
+            "website-link": "You already are on my portfolio !",
+            "difficulties": "The choice of colors wasn't easy for me, being colorblind, but after many attempts, I am now satisfied.",
+            "technologies": "I used React, Typescript and Tailwind for this project."
         }
     },
     "footer": {
@@ -79,6 +97,28 @@
             "sentence2": "We do not use cookies to collect any personal information.",
             "sentence3": "If you have any questions or concerns about our privacy policy, please contact us at matias.larralde97@gmail.com."
         }
+    },
+    "link": {
+        "home" : "Return to the main page"
+    },
+    "legal-notice": {
+        "title": "Legal notice",
+        "definitions": {
+            "client": "Tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.",
+            "prestations-services": "https://matias-larralde.fr met à disposition des Clients :",
+            "contenu": "Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.",
+            "informations-clients": "Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par https://matias-larralde.fr pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.",
+            "utilisateur": "Internaute se connectant, utilisant le site susnommé.",
+            "informations-personnelles": "« Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978). Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)"
+          },
+          "presentation-site": {
+            "title": "Présentation du site internet.",
+            "content": "En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://matias-larralde.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:",
+            "proprietaire": "Matias Larralde – 94 rue de Varenne 75007 Paris"
+          }
+    },
+    "privacy-policy": {
+        "title": "Privacy policy"
     }
 }
 

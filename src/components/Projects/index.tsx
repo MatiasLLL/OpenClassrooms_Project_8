@@ -1,17 +1,27 @@
 import { useTranslation } from 'react-i18next';
 import ProjectComponent from '../../components/ProjectComponent'
 import ContentModal from '../../components/ContentModal'
-import logoMyPortfolio from '../../assets/logo-MyPortfolio.png'
-import logoBooki from '../../assets/logo-Booki.png'
-import logoMonVieuxGrimoir from '../../assets/logo-MonVieuxGrimoir.png'
-import logoKasa from '../../assets/logo-Kasa.png'
-import logoNinaCarducci from '../../assets/logo-NinaCarducci.png'
-import logoMenuMakerByQwenta from '../../assets/logo-MenuMakerByQwenta.png'
-import logoSophieBluel from '../../assets/logo-SophieBluel.png'
+import logoMyPortfolio from '../../assets/projects/logo-MyPortfolio.png'
+import logoBooki from '../../assets/projects/logo-Booki.png'
+import logoMonVieuxGrimoir from '../../assets/projects/logo-MonVieuxGrimoir.png'
+import logoKasa from '../../assets/projects/logo-Kasa.png'
+import logoNinaCarducci from '../../assets/projects/logo-NinaCarducci.png'
+import logoMenuMakerByQwenta from '../../assets/projects/logo-MenuMakerByQwenta.png'
+import logoSophieBluel from '../../assets/projects/logo-SophieBluel.png'
 import { FaGithub } from "react-icons/fa";
+import { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 function Projects() {
     const { t } = useTranslation()
+    const { ref, inView } = useInView();
+    const [hasAnimated, setHasAnimated] = useState(false);
+    useEffect(() => {
+        if (inView && !hasAnimated) {
+        setHasAnimated(true);
+        }
+    }, [inView, hasAnimated]);
 
     return (
         <section id="projects" className='flex flex-col justify-around mx-24 my-12 '>
@@ -20,9 +30,9 @@ function Projects() {
                 {t('projects.title2')}
                 <span className='inline-block w-4/5 h-0.5 bg-color13 ml-6 rounded-full'></span>
             </h2>
-            <div className='grid grid-cols-3 gap-0 w-full h-96 text-color15 px-8 my-5'>
+            <motion.div className='grid grid-cols-3 gap-0 w-full text-color15 px-8 my-5' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
                 <div className='flex flex-col gap-12'>
-                    <div className='flex justify-end h-4/6'>
+                    <div className='flex justify-end h-4/6' ref={ref}>
                         <ProjectComponent logo={logoMyPortfolio} logoAlt={'My Portfolio'} content={
                             <ContentModal logo={logoMyPortfolio} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
                             }
@@ -30,13 +40,13 @@ function Projects() {
                     </div>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoKasa} logoAlt={'Kasa'} content={
-                            <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
+                            <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
                             }
                         />
                     </div>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoSophieBluel} logoAlt={'Sophie Bluel - Architecte d’intérieur'} content={
-                            <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
+                            <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
                             }
                         />
                     </div>
@@ -50,13 +60,13 @@ function Projects() {
                 <div className='flex flex-col gap-12'>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} content={
-                            <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
+                            <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
                             }
                         />
                     </div>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} content={
-                            <ContentModal logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} projectName={'qwenta'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={''} />
+                            <ContentModal logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} projectName={'qwenta'} icon={<FaGithub size="28" />} websiteLink={'/Qwenta.zip'}  gitHubLink={''} />
                             }
                         />
                     </div>
@@ -67,7 +77,7 @@ function Projects() {
                         />
                     </div>
                 </div>
-            </div>
+            </motion.div>
       </section>
     )
 }

@@ -30,7 +30,8 @@ export default {
       'title': '1.5rem',
       'link': '1.15rem',
       'skills': '1.05rem',
-      'active': '0.95rem',
+      'website': '0.95rem',
+      'active': '0.9rem',
       'cat': '0.85rem',
       // '3xl': '1.953rem',
       // '4xl': '2.441rem',
@@ -55,7 +56,6 @@ export default {
         '0%': { transform: 'translateX(100%)', opacity: 0 },
         '100%': { transform: 'translateX(0)', opacity: 1 },
       }
-    
     },
     extend: {},
   },
@@ -77,24 +77,3 @@ export default {
 
 // /** @type {import('tailwindcss').Config} */
 // export default
-
-// @keyframes slide-in-left {
-//   0% {
-//     transform: translateX(-100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }
-// }
-
-// @keyframes slide-in-right {
-//   0% {
-//     transform: translateX(100%);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0);
-//     opacity: 1;
-//   }

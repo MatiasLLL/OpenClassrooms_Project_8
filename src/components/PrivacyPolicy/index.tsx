@@ -1,3 +1,28 @@
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+
+function PrivacyPolicy() {
+    const { t } = useTranslation()
+
+    return (
+        <main className='m-20 flex flex-col justify-center items-center h-full bg-colorBg sm:mr-0 sm:mb-20 text-color13'>
+            <h1>{t('privacy-policy.title')}</h1>
+            <div className='my-10  ml-12 w-3/5 flex flex-col align-middle items-start justify-center'>
+                <h2>{t('footer.privacy-policy-content.sentence1')}</h2>
+                <p>{t('footer.privacy-policy-content.sentence2')}</p>
+                <p>{t('footer.privacy-policy-content.sentence3')}</p>
+            </div>
+            <Link className='mt-2 underline underline-offset-4' to="/" >{t('link.home')}</Link>
+        </main>
+    )
+}
+
+export default PrivacyPolicy
+
+
+
+
+
 // function PrivacyPolicy() {
 //     return (
 //         <div className='h-28 flex justify-center items-center'>

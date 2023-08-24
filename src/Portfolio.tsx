@@ -4,8 +4,6 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-// import './i18n'
-// bg-color11/50
 
 function Portfolio() {
   return (
