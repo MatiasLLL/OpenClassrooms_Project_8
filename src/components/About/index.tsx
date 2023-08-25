@@ -1,15 +1,13 @@
 import { useTranslation } from 'react-i18next';
-// import pic from '../../assets/photo-potfolio.jpg'
 import picBayBridge from '../../assets/pic-bay-bridge.jpg'
-// import pic from '../../assets/pic-hendaye.jpg'
 
 function About() {
     const { t } = useTranslation()
         return (
-            <section className='flex flex-row justify-around text-color17 mx-24 mt-9 mb-14 bg-color13 rounded-2xl p-8 shadow-inner shadow-color15/30'>
+            <section className='flex flex-row justify-around text-color17 mx-24 mt-9 mb-14 bg-color13 rounded-xl p-8' itemScope itemType="https://schema.org/Person">
                 <div className='w-3/5'>
                     <h1 className='text-title mb-3'>{t('about.title1')}</h1>
-                    <p>
+                    <p itemProp="description">
                         {t('about.sentence1')}<br/>
                         {t('about.sentence2')}<br/>
                         {t('about.sentence3')}<br/>
@@ -17,7 +15,7 @@ function About() {
                         {t('about.sentence5')}
                     </p>
                 </div>
-                <img src={picBayBridge} alt='Bay Bridge' className='w-2/5 ml-14 rounded-lg shadow-sm shadow-color13/20'/>
+                <img src={picBayBridge} alt='Bay Bridge' className='w-2/5 ml-14 rounded-lg shadow-xs shadow-color18' itemProp="image"/>
             </section>
         )
 }

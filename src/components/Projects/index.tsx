@@ -24,7 +24,7 @@ function Projects() {
     }, [inView, hasAnimated]);
 
     return (
-        <section id="projects" className='flex flex-col justify-around mx-24 my-12 '>
+        <section id="projects" className='flex flex-col justify-around mx-24 my-12 ' itemScope itemType="https://schema.org/CreativeWork">
             <h2 className='flex flex-row text-title mt-5 mb-8 pb-6 items-center w-full'>
                 <span className='inline-block w-1/5 h-0.5 bg-color13 mr-6 rounded-full'></span>
                 {t('projects.title2')}

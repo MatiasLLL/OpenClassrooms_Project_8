@@ -20,7 +20,7 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
             <div className="flex h-4/5">
                 <div className="w-2/3">
                     <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 mb-3">{t(`projects.${projectName}.title`)}</Dialog.Title>
-                    <p className="text-sm mr-8 leading-relaxed">
+                    <p className="text-sm mr-8 leading-relaxed" itemProp="description">
                     {t(`projects.${projectName}.description`)}
                     </p>
                     <p className="text-sm mr-8 leading-relaxed">
@@ -38,12 +38,12 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
                 ) : (
                 <>
                 {websiteLink !== '' && gitHubLink !== '' ? (
-                    <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="w-1/3 outline-none flex flex-col items-center" >
+                    <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="w-1/3 outline-none flex flex-col items-center" itemProp="url">
                         <img className="px-3 max-h-11 mt-px mb-3" src={logo} alt={logoAlt} />
                         <p className="italic text-website text-center mx-2">{t(`projects.${projectName}.website-link`)}</p>
                     </a>
                 ) : (
-                    <a href={websiteLink} className="w-1/3 outline-none flex flex-col items-center" download >
+                    <a href={websiteLink} className="w-1/3 outline-none flex flex-col items-center" itemProp="url" download>
                         <img className="px-3 max-h-11 mt-px mb-3" src={logo} alt={logoAlt} />
                         <p className="italic text-website text-center mx-2">{t(`projects.${projectName}.website-link`)}</p>
                     </a>
@@ -54,7 +54,7 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
             <div className='flex flex-col justify-around items-center h-1/5'>
                 <span className='inline-block w-full h-0.5 bg-gradient-to-r from-color17/40 to-color17/70 rounded-full'></span>
                 {gitHubLink !== '' && (
-                    <a href={gitHubLink} target="_blank" className='flex flex-row items-center mt-2 text-link sm:text-active outline-none pt-0.5'>
+                    <a href={gitHubLink} target="_blank" className='flex flex-row items-center mt-2 text-link sm:text-active outline-none pt-0.5' itemProp="url">
                         <i className='mr-5'>{icon}</i>
                         <span className='text-center cursor-pointer'>{t('projects.github-link')}</span>
                     </a>

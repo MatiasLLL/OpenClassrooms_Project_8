@@ -18,7 +18,7 @@ function ProjectComponent({logo, logoAlt, content}: ProjectsCardProps) {
 
 	return (
 		<>
-			<div className='cursor-pointer rounded-full h-[6.5rem] w-[70%] bg-color13 flex justify-center items-center shadow-inner shadow-color17' onClick={() => handleShowModal(content)}>
+			<div className='cursor-pointer h-[6.5rem] w-[70%] bg-gradient-to-b from-color13/90 via-color13 to-color13/90  rounded-xl transition-all shadow-xs hover:shadow-sm shadow-color18 flex justify-center items-center hover:scale-105 ' itemProp="name" onClick={() => handleShowModal(content)}>
 				<img className='px-3 max-h-11 mt-px' src={logo} alt={logoAlt} style={logoAlt === 'Kasa' ? { marginTop: '0.35rem' } : logoAlt === 'Booki' ? { marginTop: '0.25rem' } : logoAlt === 'Sophie Bluel - Architecte d’intérieur' ? { paddingLeft: '1.1rem', paddingRight: '1.1rem', marginTop: '0.3rem', } : {}}/>
 			</div>
 			{open && 
