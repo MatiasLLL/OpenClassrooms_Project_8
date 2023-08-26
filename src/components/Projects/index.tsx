@@ -34,7 +34,7 @@ function Projects() {
                 <div className='flex flex-col gap-12'>
                     <div className='flex justify-end h-4/6' ref={ref}>
                         <ProjectComponent logo={logoMyPortfolio} logoAlt={'My Portfolio'} content={
-                            <ContentModal logo={logoMyPortfolio} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={''} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
+                            <ContentModal logo={logoMyPortfolio} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
                             }
                         />
                     </div>

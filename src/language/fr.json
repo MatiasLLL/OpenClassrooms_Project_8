@@ -15,8 +15,8 @@
         "title1": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.",
         "sentence1": "Je viens de milieux très variés, ayant travaillé dans la restauration, l'organisation d'événements et l'agriculture urbaine.",
         "sentence2": "J'ai beaucoup grandi en tant qu'être humain grâce à ces expériences et je suis heureux d'avoir acquis de nombreuses compétences que je peux maintenant utiliser dans le développement web.",
-        "sentence3": "Résoudre des problèmes et créer des solutions, seul ou en équipe, ainsi que posséder un esprit créatif et une grande attention aux détails, sont des compétences qui font maintenant partie de moi !",
-        "sentence4": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks. Chaque nouveau jour est un nouveau défi !",
+        "sentence3": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks. Chaque nouveau jour est un nouveau défi !",
+        "sentence4": "Je suis fier de tout ce que j'ai appris et accompli lors de ma formation de développeur web avec OpenClassrooms.",
         "sentence5": "Je sais que j'ai trouvé ma voie dans la programmation."
     },
     "skills": {
@@ -79,7 +79,7 @@
             "title" : "OpenClassrooms - Projet 8",
             "description": "Ce portfolio était mon premier projet libre de A à Z. Je l'ai initialisé avec Vite et j'ai appris de nouvelles technologies telles que TypeScript et Tailwind. Les fonctionnalités qui me tenait le plus à cœur d'intégrer sont la traduction avec la librairie i18n; ainsi que la fenêtre qui apporte des précisions sur chacun des projets réalisé lors de ma formation.",
             "website-link": "Vous êtes déjà sur le portfolio !",
-            "difficulties": "Le choix de couleurs ne fût pas facile étant daltonien, mais après de nombreux essais, j'en suis maintenant satisfait",
+            "difficulties": "Le choix de couleurs ne fût pas facile étant daltonien, mais après de nombreux essais, j'en suis maintenant satisfait.",
             "technologies": "J'ai utilisé React, Typescript et Tailwind pour ce projet."
         }
     },

@@ -25,13 +25,14 @@ function Footer() {
                 <div className="grid grid-cols-8 mx-0 columns-3 -mb-6 pb-8 text-center sm:flex justify-around sm:justify-center sm:space-x-12" aria-label="Footer">
                     <div className="flex col-span-3 justify-around items-center pl-1 pr-2">
                         <Link className='text-100 hover:text-color13/70 text-center' to="/legalnotice" >{t('footer.legal-notice')}</Link>
-                        <Link className='text-100 hover:text-color13/70 text-center' to="/privacypolicy" >{t('footer.privacy-policy')}</Link>
                     </div>
                     <div className="flex col-span-2 justify-center gap-7">
                         <LinkFooter link={'https://github.com/MatiasLLL'} icon={<FaGithub size="28" />} text={'GitHub'} />
                         <LinkFooter link={'https://linkedin.com/in/matias-larralde'} icon={<FaLinkedin size="28" />} text={'Linkedin'} />
                     </div>
-                    <a href="mailto:matias.larralde97@gmail.com" className="col-span-3 pr-5 text-100 flex justify-end leading-6 hover:text-color13/70">matias.larralde97@gmail.com</a>
+                    <div className="flex col-span-3 justify-around items-center pl-2 pr-1">
+                        <Link className='text-100 hover:text-color13/70 text-center' to="/privacypolicy" >{t('footer.privacy-policy')}</Link>
+                    </div>
                 </div>
                 <p className="mt-9 pb-2 text-center text-90 leading-5 text-gray-500">{t('footer.copyright')}</p>
             </div>
@@ -113,3 +114,5 @@ export default Footer
 // }
 
 // export default Footer
+
+{/* <a href="mailto:matias.larralde97@gmail.com" className="col-span-3 pr-5 text-100 flex justify-end leading-6 hover:text-color13/70">matias.larralde97@gmail.com</a> */}

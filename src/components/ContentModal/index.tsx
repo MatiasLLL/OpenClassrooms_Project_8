@@ -30,8 +30,8 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
                     {t(`projects.${projectName}.technologies`)}
                     </p>
                 </div>
-                {websiteLink === '' && gitHubLink !== '' ? (
-                    <a href="" className="w-1/3 outline-none flex flex-col items-center">
+                {websiteLink === '#' && gitHubLink !== '' ? (
+                    <a href={websiteLink} className="w-1/3 outline-none flex flex-col items-center">
                         <img className="px-3 max-h-11 mt-px mb-3" src={logo} alt={logoAlt} />
                         <p className="italic text-website text-center mx-2">{t(`projects.${projectName}.website-link`)}</p>
                     </a>
