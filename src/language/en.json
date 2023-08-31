@@ -11,12 +11,11 @@
         "language": "EN/FR"
     },
     "about": {
-        "title1": "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.",
-        "sentence1": "I'm coming into the tech industry with a very diversified background, ranging from restoration, event setup to even urban farming.",
-        "sentence2": "I grew a lot as a human having had such experiences and I'm glad to have acquired many skills that I can use into Web Development.",
-        "sentence3": "This builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge !",
-        "sentence4": "I'm proud of everything I've learned and accomplished during my web developer training with OpenClassrooms.",
-        "sentence5": "I know that I have found my path into programming."
+        "title": "Hi! I'm Matias Larralde and I'm thrilled that you are curious about my Portfolio.",
+        "sentence1": "Having a diversified background ranging from restoration, event setup, and urban farming has allowed me to acquire many skills that I can use in web development, and my unique perspective can bring creativity and innovation to a team!",
+        "sentence2": "This builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge !",
+        "sentence3": "I'm proud of everything I've learned and accomplished during my web developer training with OpenClassrooms.",
+        "sentence4": "I know that I have found my path into programming."
     },
     "skills": {
         "title2": "Skills"
@@ -77,7 +76,7 @@
         "my-portfolio": {
             "title" : "OpenClassrooms - Project 8",
             "description": "This portfolio was my first independent project from start to finish. I initialized it with Vite and learned new technologies such as TypeScript and Tailwind. I implemented important features to me such as the translation with the i18n library; as well as the modal that provides details on each project I built during my training.",
-            "website-link": "You already are on my portfolio !",
+            "website-link": "You already are on my portfolio!",
             "difficulties": "The choice of colors wasn't easy for me, being colorblind, but after many attempts, I am now satisfied.",
             "technologies": "I used React, Typescript and Tailwind for this project."
         }

@@ -88,14 +88,13 @@
 	</script>
 
 
-
 </head>
-<body class='p-0 m-0 overflow-y-scroll bg-colorBg font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
+<body class='bg-gradient-to-bl from-color17 via-[#35689f] to-[#b8b4ab] bg-fixed p-0 m-0 overflow-y-scroll bg-colorBg font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-color9 scrollbar-track-color10 scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx" defer></script>
 	<script>
 		let userLang = navigator.language || navigator.userLanguage;
-		let lang = userLang || 'en'; // set default language to English
+		let lang = userLang || 'en';
 		document.getElementById("html-tag").lang = lang;
 		document.getElementById("locale-tag").setAttribute("content", lang);
 		

@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <>
       <NavBar />
-      <main className='mr-20 h-full bg-colorBg sm:mr-0 sm:mb-20 text-color13'>
+      <main className='mr-20 h-full lg:mr-0 lg:mb-20 text-color13'>
         <Header />
         <About />
         <Skills />

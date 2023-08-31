@@ -12,12 +12,11 @@
         "language": "FR/EN"
     },
     "about": {
-        "title1": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.",
-        "sentence1": "Je viens de milieux très variés, ayant travaillé dans la restauration, l'organisation d'événements et l'agriculture urbaine.",
-        "sentence2": "J'ai beaucoup grandi en tant qu'être humain grâce à ces expériences et je suis heureux d'avoir acquis de nombreuses compétences que je peux maintenant utiliser dans le développement web.",
-        "sentence3": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks. Chaque nouveau jour est un nouveau défi !",
-        "sentence4": "Je suis fier de tout ce que j'ai appris et accompli lors de ma formation de développeur web avec OpenClassrooms.",
-        "sentence5": "Je sais que j'ai trouvé ma voie dans la programmation."
+        "title": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.",
+        "sentence1": "Par mes expériences plutôt variées, allant de la restauration, la mise en place d'événements ou encore l'agriculture urbaine, j'ai pu acquérir de nombreuses compétences que je peux utiliser dans le développement web.",
+        "sentence2": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks.",
+        "sentence3": "Je suis fier de tout ce que j'ai appris et accompli lors de ma formation de développeur web avec OpenClassrooms.",
+        "sentence4": "Je sais que j'ai trouvé ma voie dans la programmation."
     },
     "skills": {
         "title2": "Compétences"

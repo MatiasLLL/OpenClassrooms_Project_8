@@ -20,11 +20,3 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>,
 )
 
-
-// import NavBar from './components/NavBar'
-// import Header from './components/Header'
-// import Footer from './components/Footer'
-// <NavBar />
-// <Header />
-// <Footer />
-
