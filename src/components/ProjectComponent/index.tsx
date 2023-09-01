@@ -28,7 +28,7 @@ function ProjectComponent({logo, logoAlt, content}: ProjectsCardProps) {
 				<div className="fixed inset-0 bg-opacity-75 transition-opacity" />
 				</Transition.Child>
 				<div className="fixed inset-0 z-10 overflow-y-auto">
-					<div className="flex bg-gradient-to-r from-color13/30 to-color17/20 min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
+					<div className="flex bg-gradient-to-l from-color17/10 to-color17/40 min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
 					<Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" enterTo="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200" leaveFrom="opacity-100 translate-y-0 sm:scale-100" leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" >
 						<Dialog.Panel className="relative w-1/2 bg-color13 justify-center items-center transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all xl:w-7/12 lg:w-2/3 lg:min-h-fit lg:mb-20 md:w-3/4 sm:w-5/6">
 						{modalContent}
@@ -45,4 +45,4 @@ function ProjectComponent({logo, logoAlt, content}: ProjectsCardProps) {
 
 export default ProjectComponent
 
-// Dialog.Panel => h-96 (24rem) - - after Diploma
+// Dialog.Panel => h-96 (24rem) - after Diploma

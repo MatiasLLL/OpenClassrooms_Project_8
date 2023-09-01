@@ -19,7 +19,7 @@ function Footer() {
     )
 
     return (
-        <footer id='contact' className='flex flex-col justify-center mx-24 lg:mx-[5%] pt-14 md:mx-[5%] sm:mx-6 xs:mx-4' itemScope itemType="https://schema.org/WPFooter">
+        <footer id='contact' className='flex flex-col justify-center mx-24 lg:mx-[5%] pt-8 md:mx-[5%] sm:mx-6 xs:mx-4' itemScope itemType="https://schema.org/WPFooter">
             <span className='border-t border-color13 rounded-full mb-4 lg:mb-3 sm:mx-3'></span>
             <div className="justify-between overflow-hidden px-0 py-10 lg:py-7 sm:py-7 xs:pt-6">
                 <div className="grid grid-cols-8 lg:grid-cols-3 mx-0 columns-3 -mb-6 pb-8 text-center justify-around lg:pb-5 md:pb-4 sm:flex sm:flex-wrap sm:justify-center sm:pb-3" aria-label="Footer">

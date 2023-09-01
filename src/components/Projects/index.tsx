@@ -31,7 +31,7 @@ function Projects() {
                 {t('projects.title2')}
                 <span className='inline-block w-4/5 h-0.5 bg-color13 ml-6 rounded-full md:w-1/2'></span>
             </h2>
-            <motion.div className='grid grid-cols-3 gap-0 w-full text-color15 px-7 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
+            <motion.div className='grid grid-cols-3 gap-0 w-full text-color15 px-9 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
                 <div className='flex flex-col gap-16 sm:gap-9'>
                     <div className='flex justify-end h-4/6 ' ref={ref}>
                         <ProjectComponent logo={logoPortfolio} logoAlt={'My Portfolio'} content={

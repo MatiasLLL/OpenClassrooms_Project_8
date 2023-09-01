@@ -41,7 +41,7 @@
         },
         "sophie-bluel": {
             "title" : "OpenClassrooms - Projet 3",
-            "description": "Pour ce projet, j'ai implémenté plusieurs fonctionnalités en JavaScript, notamment la récupération de données depuis une API avec fetch, ainsi que le filtrage de celle-ci. J'ai également intégré une page de connexion et une modale permettant l'ajout, la modification et la suppression de données, à la fois sur la page et sur l'API.",
+            "description": "Pour ce projet, j'ai implémenté plusieurs fonctionnalités en JavaScript, notamment la récupération de données depuis une API avec fetch, ainsi que le filtrage de celles-ci. J'ai également intégré une page de connexion et une modale permettant l'ajout, la modification et la suppression de données, à la fois sur la page et sur l'API.",
             "website-link": "Lien vers le site",
             "difficulties": "J'ai rencontré un soucis après avoir push mon backend sur GitHub, j'ai donc créé un nouveau repository pour ce projet.",
             "technologies": "J'ai utilisé HTML, CSS et JavaScript pour ce projet."
@@ -64,7 +64,7 @@
             "title" : "OpenClassrooms - Projet 6",
             "description": "Pour ce projet React, j'ai utilisé React Router pour configurer la navigation entre les pages, conçu des composants React utilisés ensuite dans les différentes pages, réalisé des animations CSS avec SASS, et implémenté une page 404 pour les routes inexistantes.",
             "website-link": "Lien vers le site",
-            "difficulties": "J'ai eu un peu de mal à réaliser le fetch des données d'un logement, mais avec persévérence j'ai réussi.",
+            "difficulties": "J'ai eu un peu de mal à réaliser le fetch des données d'un logement, mais avec persévérance j'ai réussi.",
             "technologies": "J'ai utilisé React.js et Sass pour ce projet."
         },
         "mon-vieux-grimoire": {
@@ -76,7 +76,7 @@
         },
         "my-portfolio": {
             "title" : "OpenClassrooms - Projet 8",
-            "description": "Ce portfolio était mon premier projet libre de A à Z. Je l'ai initialisé avec Vite et j'ai appris de nouvelles technologies telles que TypeScript et Tailwind. Les fonctionnalités qui me tenait le plus à cœur d'intégrer sont la traduction avec la librairie i18n; ainsi que la fenêtre qui apporte des précisions sur chacun des projets réalisé lors de ma formation.",
+            "description": "Ce portfolio était mon premier projet libre de A à Z. Je l'ai initialisé avec Vite et j'ai appris de nouvelles technologies telles que TypeScript et Tailwind. Les fonctionnalités qui me tenaient le plus à cœur d'intégrer sont la traduction avec la librairie i18n; ainsi que la fenêtre qui apporte des précisions sur chacun des projets réalisés lors de ma formation.",
             "website-link": "Vous êtes déjà sur le portfolio !",
             "difficulties": "Le choix de couleurs ne fût pas facile étant daltonien, mais après de nombreux essais, j'en suis maintenant satisfait.",
             "technologies": "J'ai utilisé React, Typescript et Tailwind pour ce projet."
