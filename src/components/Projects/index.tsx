@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import ProjectComponent from '../../components/ProjectComponent'
 import ContentModal from '../../components/ContentModal'
-import logoPortfolio from '../../assets/projects/Portfolio.png'
-import logoPortfoliov2 from '../../assets/projects/Portfoliov2.png'
+import logoPortfolio from '../../assets/projects/logo-Portfolio.png'
+import logoPortfoliov2 from '../../assets/projects/logo-Portfolio-v2.png'
 import logoBooki from '../../assets/projects/logo-Booki.png'
 import logoMonVieuxGrimoir from '../../assets/projects/logo-MonVieuxGrimoir.png'
 import logoKasa from '../../assets/projects/logo-Kasa.png'
@@ -34,8 +34,8 @@ function Projects() {
             <motion.div className='grid grid-cols-3 gap-0 w-full px-9 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
                 <div className='flex flex-col gap-16 sm:gap-9'>
                     <div className='flex justify-end h-4/6' ref={ref}>
-                        <ProjectComponent logo={logoPortfolio} logoAlt={'My Portfolio'} content={
-                            <ContentModal logo={logoPortfoliov2} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
+                        <ProjectComponent logo={logoPortfolio} logoAlt={'Portfolio'} content={
+                            <ContentModal logo={logoPortfoliov2} logoAlt={'Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
                             }
                         />
                     </div>
