@@ -1,19 +1,18 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function LegalNotice() {
     const { t } = useTranslation()
 
     return (
-        <main className='m-20 flex flex-col justify-center items-center h-full bg-colorBg sm:mr-0 sm:mb-20 text-color13'>
+        <main className='m-20 flex flex-col justify-center items-center h-full sm:mr-0 sm:mb-20'>
             <h1>{t('legal-notice.title')}</h1>
-            <div className='my-10  ml-12 w-3/5 flex flex-col align-middle items-start justify-center'>
+            <div className='my-10 ml-12 w-3/5 flex flex-col align-middle items-start justify-center'>
                 <h2>{t('footer.legal-notice-content.sentence1')}</h2>
-                <h1>{t('footer.legal-notice-content.sentence1')}</h1>
                 <p>{t('footer.legal-notice-content.sentence2')}</p>
                 <p>{t('footer.legal-notice-content.sentence3')}</p>
             </div>
-            <Link className='mt-2 underline underline-offset-4' to="/" >{t('link.home')}</Link>
+            <Link className='mt-2 underline underline-offset-4' to='/' >{t('link.home')}</Link>
         </main>
     )
 }

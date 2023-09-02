@@ -1,9 +1,5 @@
 
 {
-    "head": {
-        "title": "Matias Larralde - Portfolio",
-        "description": ""
-    },
     "categories": {
         "about": "A Propos",
         "skills": "Compétences",
@@ -13,7 +9,7 @@
     },
     "about": {
         "title": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.",
-        "sentence1": "Par mes expériences plutôt variées, allant de la restauration, la mise en place d'événements ou encore l'agriculture urbaine, j'ai pu acquérir de nombreuses compétences que je peux utiliser dans le développement web.",
+        "sentence1": "Par mes expériences plutôt variées, allant de la restauration, la mise en place d'événements ou encore l'agriculture urbaine, j'ai pu acquérir de nombreuses compétences que je peux utiliser dans le développement web; mon regard unique peut apporter de la créativité à une équipe !",
         "sentence2": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks.",
         "sentence3": "Je suis fier de tout ce que j'ai appris et accompli lors de ma formation de développeur web avec OpenClassrooms.",
         "sentence4": "Je sais que j'ai trouvé ma voie dans la programmation."

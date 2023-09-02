@@ -25,13 +25,13 @@ function Projects() {
     }, [inView, hasAnimated]);
 
     return (
-        <section id="projects" className='flex flex-col justify-around mx-24 my-12 lg:mx-[5%] md:mx-0 xs:mb-0 lg:pt-4' itemScope itemType="https://schema.org/CreativeWork">
+        <section id='projects' className='flex flex-col justify-around mx-24 my-12 lg:mx-[5%] md:mx-0 xs:mb-0 lg:pt-4' itemScope itemType='https://schema.org/CreativeWork'>
             <h2 className='flex flex-row text-150 my-8 pb-5 items-center w-full md:px-[8%] md:pb-2 md:mb-4 sm:text-145 xs:text-140 xs:pb-6'>
-                <span className='inline-block w-1/5 h-0.5 bg-color13 mr-6 rounded-full  md:w-1/2'></span>
+                <span className='inline-block w-1/5 h-0.5 bg-white mr-6 rounded-full md:w-1/2'></span>
                 {t('projects.title2')}
-                <span className='inline-block w-4/5 h-0.5 bg-color13 ml-6 rounded-full md:w-1/2'></span>
+                <span className='inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2'></span>
             </h2>
-            <motion.div className='grid grid-cols-3 gap-0 w-full text-color15 px-9 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
+            <motion.div className='grid grid-cols-3 gap-0 w-full px-9 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
                 <div className='flex flex-col gap-16 sm:gap-9'>
                     <div className='flex justify-end h-4/6 ' ref={ref}>
                         <ProjectComponent logo={logoPortfolio} logoAlt={'My Portfolio'} content={
