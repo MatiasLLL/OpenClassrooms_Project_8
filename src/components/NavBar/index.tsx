@@ -30,7 +30,7 @@ function NavBar() {
         return () => window.removeEventListener('hashchange', handleHashChange);
     }, [])
     return (
-        <nav className='group/menu z-50 bg-darkBlue text-white/90 fixed text-105 top-0 right-0 py-3 h-screen w-20 flex flex-col shadow-sm shadow-blue hover:w-52 hover:duration-100 text-center justify-between lg:bottom-0 lg:flex-row lg:px-4 lg:py-0 lg:top-auto lg:w-screen lg:h-20 lg:hover:w-screen :justify-around'>
+        <nav className='group/menu z-50 bg-darkBlue text-white/90 fixed text-105 top-0 right-0 py-3 h-screen w-20 flex flex-col shadow-sm shadow-blue hover:w-52 hover:duration-100 text-center justify-between lg:fixed lg:bottom-0 lg:left-0 lg:flex-row lg:top-auto lg:px-4 lg:py-0 lg:w-screen lg:h-20 lg:hover:w-screen'>
             <ul className='navbar-top lg:flex lg:flex-row lg:justify-around lg:w-3/5'>
                 <NavCat icon={<FaAddressCard size="27" />} text={t('categories.about')} anchor={'#about'} />
                 <NavCat icon={<GiSkills size="27" />} text={t('categories.skills')} anchor={'#skills'} />

@@ -39,7 +39,7 @@ function Skills() {
                 {t('skills.title2')}
                 <span className='inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2'></span>
             </h2>
-            <div className='skills-container flex flex-row lg:flex-wrap pb-3'>
+            <div className='flex flex-row overflow-hidden lg:flex-wrap pb-3'>
                 <motion.section className='flex flex-col w-1/2 mr-4 xl:w-3/5 xl:mx-4 lg:w-full lg:items-center lg:mt-7' animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
                     <div className='flex justify-center pr-6 xl:pr-8 lg:pr-3 md:pr-0' ref={ref} >
                         <SkillsCard icon={HTML} iconAlt={'logo HTML'} text={'HTML'} />

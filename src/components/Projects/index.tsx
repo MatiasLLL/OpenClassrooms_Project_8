@@ -33,7 +33,7 @@ function Projects() {
             </h2>
             <motion.div className='grid grid-cols-3 gap-0 w-full px-9 my-5 lg:px-4 md:px-[3.5%] md:w-11/12 m-auto sm:px-2 sm:my-5 xs:mx-auto xs:my-0 xs:p-0' animate={hasAnimated  ? { y: 0, opacity: 1 } : { y: 170, opacity: 0.3 }} transition={{ duration: 0.7, ease: 'easeOut' }} >
                 <div className='flex flex-col gap-16 sm:gap-9'>
-                    <div className='flex justify-end h-4/6 ' ref={ref}>
+                    <div className='flex justify-end h-4/6' ref={ref}>
                         <ProjectComponent logo={logoPortfolio} logoAlt={'My Portfolio'} content={
                             <ContentModal logo={logoPortfoliov2} logoAlt={'My Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
                             }
