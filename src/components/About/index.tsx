@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import picBayBridge from '../../assets/photos/pic-bay-bridge.jpg'
+import picBayBridgeResponsive from '../../assets/photos/pic-bay-bridge-responsive.jpg'
 
 function About() {
     const { t } = useTranslation()
@@ -14,9 +15,21 @@ function About() {
                         {t('about.sentence4')}
                     </p>
                 </div>
-                <img src={picBayBridge} alt='Bay Bridge' className='w-2/5 ml-14 aspect-auto rounded-lg shadow-sm shadow-blue/20 xl:ml-7 lg:ml-[3.5%] md:w-2/3 md:ml-0 md:mt-20 md:mb-6 md:rounded-xl sm:w-11/12 sm:md:mt-16 sm:mb-2' itemProp='image'/>
+                <div className='w-2/5 h-auto ml-14 aspect-auto rounded-lg shadow-sm shadow-blue/20 xl:ml-7 lg:ml-[3.5%] md:w-2/3 md:ml-0 md:mt-20 md:mb-6 md:rounded-xl sm:w-11/12 sm:md:mt-16 sm:mb-2'>
+                    <img alt='Bay Bridge'className='h-full w-full' itemProp='image' loading='lazy'
+                        src={picBayBridge} 
+                        srcSet={`${picBayBridgeResponsive} 430w, ${picBayBridge} 750w`}
+                        sizes="(max-width: 770px) 430px, 750px"
+                    />
+                </div>
             </section>
         )
 }
 
 export default About
+
+
+// srcset="./assets/images/slider/nicholas-green-650-unsplash.jpg 650w,
+//         ./assets/images/slider/nicholas-green-1000-unsplash.jpg 1000w,
+//         ./assets/images/slider/nicholas-green-unsplash.jpg 1600w"
+// sizes="(max-width: 650px) 650px, (max-width: 1000px) 1000px, (min-width: 1001px) 1600px"
