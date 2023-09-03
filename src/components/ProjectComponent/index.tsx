@@ -19,7 +19,9 @@ function ProjectComponent({logo, logoAlt, content}: ProjectsCardProps) {
 	return (
 		<>
 			<div className='cursor-pointer h-[6.5rem] rounded-xl transition-all flex justify-center items-center hover:scale-105 md:h-[5.5rem] sm:w-2/3 sm:h-[5.2rem] xs:w-3/4' itemProp='name' role='button' onClick={() => handleShowModal(content)}>
-				<img className='px-0 max-h-[55px] max-w-[215px] lg:max-w-[200px] lg:max-h-[50px] md:max-w-[165px] md:max-h-[47px] sm:max-h-[44px] sm:max-w-[140px] xs:max-h-[35px] xs:max-w-[115px]' src={logo} alt={logoAlt} style={logoAlt === 'Kasa' || logoAlt === 'Booki' || logoAlt === 'Menu Maker by Qwenta' ? {paddingInline: '6.5%'} : logoAlt === 'Portfolio' ? {paddingInline: '11%'} : {}}/>
+				<div className='flex justify-center items-center px-0 w-[215px] h-[55px] lg:w-[200px] lg:h-[50px] md:w-[165px] md:h-[47px] sm:h-[44px] sm:w-[140px] xs:max-h-[35px] xs:w-[115px]'>
+					<img className='h-full w-full object-contain' src={logo} alt={logoAlt} style={logoAlt === 'Kasa' || logoAlt === 'Booki' || logoAlt === 'Menu Maker by Qwenta' ? {paddingInline: '6.5%'} : logoAlt === 'Portfolio' ? {paddingInline: '11%'} : {}}/>
+				</div>
 			</div>
 			{open && 
 			<Transition.Root show={open} as={Fragment}>

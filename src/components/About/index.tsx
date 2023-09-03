@@ -16,7 +16,7 @@ function About() {
                     </p>
                 </div>
                 <div className='w-2/5 h-auto ml-14 aspect-auto rounded-lg shadow-sm shadow-blue/20 xl:ml-7 lg:ml-[3.5%] md:w-2/3 md:ml-0 md:mt-20 md:mb-6 md:rounded-xl sm:w-11/12 sm:md:mt-16 sm:mb-2'>
-                    <img alt='Bay Bridge'className='h-full w-full' itemProp='image' loading='lazy'
+                    <img alt='Bay Bridge'className='h-full w-full rounded-lg md:rounded-xl' itemProp='image' loading='lazy'
                         src={picBayBridge} 
                         srcSet={`${picBayBridgeResponsive} 430w, ${picBayBridge} 750w`}
                         sizes="(max-width: 770px) 430px, 750px"

@@ -27,7 +27,9 @@ function Skills() {
     }
     const SkillsCard = ({icon, text, iconAlt}: SkillsCardProps) => (
         <div className='flex flex-col items-center justify-center text-105 sm:text-90 my-5 lg:my-7 lg:py-0.5 sm:my-5 xs:my-3' itemProp="skill">
-            <img className='mb-[0.35rem] max-h-[36px] max-w-[47px]' src={icon} alt={iconAlt} style={text === 'Tailwind' ? { marginBottom: '0.7rem' } : {}} />
+            <div className='w-[47px] h-[36px] flex justify-center items-center mb-[0.35rem]'>
+                <img className='h-full w-full object-contain' src={icon} alt={iconAlt} style={text === 'Tailwind' ? { marginBottom: '0.7rem' } : {}} />
+            </div>
             <span className='text-white text-center'>{text}</span>
         </div>
     )
@@ -41,7 +43,7 @@ function Skills() {
             </h2>
             <div className='flex flex-row overflow-hidden lg:flex-wrap pb-3'>
                 <motion.section className='flex flex-col w-1/2 mr-4 xl:w-3/5 xl:mx-4 lg:w-full lg:items-center lg:mt-7' animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
-                    <div className='flex justify-center pr-6 xl:pr-8 lg:pr-3 md:pr-0' ref={ref} >
+                    <div className='flex justify-center pr-8 lg:pr-3 md:pr-0' ref={ref} >
                         <SkillsCard icon={HTML} iconAlt={'logo HTML'} text={'HTML'} />
                     </div>
                     <div className='flex justify-center items-center pl-5 pr-6 ml-14 w-4/5 xl:pl-10 xl:pr-10 lg:w-7/12 lg:pl-6 lg:pr-14 lg:ml-16 lg:mr-2 md:mr-6 md:pr-11 md:pl-7 sm:pl-2 sm:pr-7 xs:ml-[3.25rem] xs:mr-1 xs:pl-1 xs:pr-8'>
@@ -59,7 +61,7 @@ function Skills() {
                         <span className='inline-block w-1/2 h-0.5 bg-white lg:bg-white/20 ml-4 mr-7 pr-10 lg:mr-6 lg:ml-3 lg:pr-12 lg:pl-7 rounded-full md:pr-14 md:pl-6 md:mr-6 md:ml-4 sm:w-3/4'></span>
                         <SkillsCard icon={React} iconAlt={'logo React'} text={'React'} />
                     </div>
-                    <div className='flex justify-center pr-1 lg:pr-0'>
+                    <div className='flex justify-center pr-3 lg:pr-0'>
                         <SkillsCard icon={Node} iconAlt={'logo Node'} text={'Node - Express'} />
                     </div>
                 </motion.section>

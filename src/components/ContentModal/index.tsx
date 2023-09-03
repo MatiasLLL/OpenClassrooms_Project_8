@@ -44,7 +44,9 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
                     </a>
                 ) : (
                     <a href={websiteLink} className='w-1/3 md:w-[30%] outline-none flex flex-col items-center xs:w-full xs:mx-12 xs:my-4' itemProp='url' download>
-                        <img className='px-3 mt-1 mb-3 md:px-0 md:mb-2 md:mt-1 max-h-[47px] max-w-[190px] md:max-w-[150px] md:max-h-[37px]' src={logo} alt={logoAlt} />
+                        <div className='px-3 mt-1 mb-3 md:px-0 md:mb-2 md:mt-1 max-h-[47px] max-w-[190px] md:max-w-[150px] md:max-h-[37px]'>
+                            <img className='h-full w-full object-contain' src={logo} alt={logoAlt} />
+                        </div>
                         <p className='italic text-95 lg:text-90 text-center mx-2 md:mx-auto sm:text-85 sm:pt-0.5'>{t(`projects.${projectName}.website-link`)}</p>
                     </a>
                 )}
