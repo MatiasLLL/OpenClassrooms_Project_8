@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import picBayBridge from '../../assets/pic-bay-bridge.jpg'
+import picBayBridge from '../../assets/photos/pic-bay-bridge.jpg'
 
 function About() {
     const { t } = useTranslation()

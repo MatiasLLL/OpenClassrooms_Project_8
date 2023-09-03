@@ -46,7 +46,7 @@
             "title" : "OpenClassrooms - Projet 4",
             "description": "Ce projet est le seul qui ne contient pas de code, consitant en la planification du développement d'un site. J'ai donc réalisé les spécifications techniques, effectué une veille des différents aspects techniques du projet, et mis en place un tableau Kanban pour la gestion du projet.",
             "website-link": "Cliquez pour télécharger le projet",
-            "difficulties": "J'ai eu des difficultés à écrire correctement mes spécifications techniques, mais après de bonnes recherches, j'ai réussi!",
+            "difficulties": "J'ai eu des difficultés à écrire correctement mes spécifications techniques, mais après de bonnes recherches, j'ai réussi !",
             "technologies": "J'ai utilisé Google Slides, Notion and Wakelet pour ce projet."
         },
         "nina-carducci": {
@@ -67,7 +67,7 @@
             "title" : "OpenClassrooms - Projet 7",
             "description": "Ce fût le dernier projet de ma formation OpenClassrooms avec une feuille de route. Cette fois-ci, j'ai conçu un serveur Express, une API RESTful, mis en place un système d'authentification et implémenté des opérations CRUD de manière sécurisée.",
             "website-link": "Lien vers le site",
-            "difficulties": "J'ai eu des difficultés à utiliser Sharp pour optimiser les images, mais lorsque j'ai trouvé comment renommer correctement le fichier optimisé, tout a fonctionné!",
+            "difficulties": "J'ai eu des difficultés à utiliser Sharp pour optimiser les images, mais lorsque j'ai trouvé comment renommer correctement le fichier optimisé, tout a fonctionné !",
             "technologies": "J'ai utilisé Node.js et Express.js pour ce projet."
         },
         "my-portfolio": {
