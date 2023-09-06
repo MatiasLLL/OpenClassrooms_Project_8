@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ProjectComponent from '../../components/ProjectComponent'
-import ContentModal from '../../components/ContentModal'
+import { lazy, Suspense } from 'react'
+const ContentModal = lazy(() => import ('../../components/ContentModal'))
 import logoPortfolio from '../../assets/projects/logo-Portfolio.png'
 import logoPortfoliov2 from '../../assets/projects/logo-Portfolio-v2.png'
 import logoBooki from '../../assets/projects/logo-Booki.png'
@@ -35,45 +36,59 @@ function Projects() {
                 <div className='flex flex-col gap-16 sm:gap-9'>
                     <div className='flex justify-end h-4/6' ref={ref}>
                         <ProjectComponent logo={logoPortfolio} logoAlt={'Portfolio'} content={
-                            <ContentModal logo={logoPortfoliov2} logoAlt={'Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoPortfoliov2} logoAlt={'Portfolio'} projectName={'my-portfolio'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_8'} />
+                            </Suspense>
                             }
                         />
                     </div>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoKasa} logoAlt={'Kasa'} content={
-                            <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
+                            </Suspense>
                             }
                         />
                     </div>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoSophieBluel} logoAlt={'Sophie Bluel - Architecte d’intérieur'} content={
-                            <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
+                            </Suspense>
                             }
                         />
                     </div>
                 </div>
                 <div className='flex items-center justify-center'>
                     <ProjectComponent logo={logoNinaCarducci} logoAlt={'Nina Carducci - Photographe'} content={
-                        <ContentModal logo={logoNinaCarducci} logoAlt={'NinaCarducci - Photographe'} projectName={'nina-carducci'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_5'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_5'} />
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <ContentModal logo={logoNinaCarducci} logoAlt={'NinaCarducci - Photographe'} projectName={'nina-carducci'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_5'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_5'} />
+                        </Suspense>
                         }
                     />
                 </div>
                 <div className='flex flex-col gap-12 sm:gap-9'>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} content={
-                            <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
+                            </Suspense>
                             }
                         />
                     </div>
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} content={
-                            <ContentModal logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} projectName={'qwenta'} icon={<FaGithub size="28" />} websiteLink={'/Qwenta.zip'}  gitHubLink={''} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoMenuMakerByQwenta} logoAlt={'Menu Maker by Qwenta'} projectName={'qwenta'} icon={<FaGithub size="28" />} websiteLink={'/Qwenta.zip'}  gitHubLink={''} />
+                            </Suspense>
                             }
                         />
                     </div>
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoBooki} logoAlt={'Booki'} content={
-                            <ContentModal logo={logoBooki} logoAlt={'Booki'} projectName={'booki'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_2'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_2'} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContentModal logo={logoBooki} logoAlt={'Booki'} projectName={'booki'} icon={<FaGithub size="28" />} websiteLink={'https://matiaslll.github.io/OpenClassrooms_Project_2'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_2'} />
+                            </Suspense>
                             }
                         />
                     </div>

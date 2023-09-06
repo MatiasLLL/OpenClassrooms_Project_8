@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Portfolio from './Portfolio.tsx'
-import LegalNotice from './components/LegalNotice'
-import PrivacyPolicy from './components/PrivacyPolicy'
+
+const LegalNotice = lazy(() => import ('./components/LegalNotice'))
+const PrivacyPolicy = lazy(() => import ('./components/PrivacyPolicy'))
+
+// import LegalNotice from './components/LegalNotice'
+// import PrivacyPolicy from './components/PrivacyPolicy'
 import './index.css'
 import './i18n'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+)
+
+root.render(
   <React.StrictMode> 
     <Router>
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/legalnotice" element={<LegalNotice />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/legalnotice" element={<Suspense fallback={<div>Loading...</div>}><LegalNotice /></Suspense>} />
+        <Route path="/privacypolicy" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
         <Route path="*" element={<Portfolio />} />
       </Routes>
     </Router>      
