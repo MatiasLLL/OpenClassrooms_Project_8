@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" id="html-tag" prefix="og: http://ogp.me/ns#">
+<head>
+	<title id="page-title">Matias Larralde's Portfolio</title>
+	<meta charset="UTF-8" />
+	<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+	<!-- <link rel="icon" type="image/svg+xml+ico" href="/favicon.ico" /> -->
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" class="description" content="Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.">
+	<!-- Open graph tags for social media sharing -->
+	<meta property="og:title" class="title" content="Matias Larralde's Portfolio">
+	<meta property="og:description" class="description" content="Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.">
+	<meta property="og:site" content="Matias Larralde">
+	<meta property="og:image" content="https://matias-larralde.fr/src/assets/pic-bay-bridge.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://matias-larralde.fr">
+	<meta property="og:locale" id="locale-tag" content="en">
+	<!-- Twitter card tags for social media sharing -->
+	<meta name="twitter:title" class="title" content="Matias Larralde's Portfolio">
+	<meta name="twitter:description" class="description" content="Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.">
+	<meta name="twitter:site" content="@Matias Larralde">
+	<meta name="twitter:image" content="https://matias-larralde.fr/src/assets/pic-bay-bridge.jpg">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@Matias Larralde">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "person",
+		  "name": "Matias Larralde",
+		  "url": "https://matias-larralde.fr",
+
+		  "CreativeWork": [
+			{
+				"@type": "Project",
+				"position": 1,
+				"title": "Booki",
+				"websiteUrl": "https://matiaslll.github.io/OpenClassrooms_Project_2",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_2"
+			},
+			{
+				"@type": "Project",
+				"position": 2,
+				"title": "Sophie Bluel",
+				"websiteUrl": "",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_3"
+			},
+			{
+				"@type": "Project",
+				"position": 3,
+				"title": "Qwenta",
+			},
+			{
+				"@type": "Project",
+				"position": 4,
+				"title": "Nina Carducci",
+				"websiteUrl": "https://matiaslll.github.io/OpenClassrooms_Project_5",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_5"
+			},
+			{
+				"@type": "Project",
+				"position": 5,
+				"title": "Kasa",
+				"websiteUrl": "",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_6"
+			},
+			{
+				"@type": "Project",
+				"position": 6,
+				"title": "Mon Vieux Grimoir",
+				"websiteUrl": "",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_7"
+			},
+			{
+				"@type": "Project",
+				"position": 7,
+				"title": "Matias Larralde's Portfolio",
+				"websiteUrl": "https://matias-larralde.fr",
+				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_8"
+			}
+		  ]
+		}
+	</script>
+	<script type="module" crossorigin src="assets/index-d8edaff4.js"></script>
+  	<link rel="stylesheet" href="assets/index-caef0f3d.css">
+</head>
+<body class='bg-gradient-to-bl from-darkBlue via-blue to-stone bg-fixed text-white p-0 m-0 overflow-y-scroll font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-darkBlue scrollbar-track-darkBlue scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
+	<div id="root"></div>
+	
+	<script>
+		let userLang = navigator.language || navigator.userLanguage;
+		let lang = userLang || 'en';
+		document.getElementById("html-tag").lang = lang;
+		document.getElementById("locale-tag").setAttribute("content", lang);
+		
+		// Function to change the page <head> content based on the user's language
+		function changeTitle() {
+			let pageTitle = document.getElementById("page-title");
+			let titleContent = '';
+			let descriptionContent = '';
+			if (userLang.startsWith("fr")) {
+				pageTitle.innerText = "Matias Larralde - Portfolio";
+				titleContent = "Matias Larralde - Portfolio";
+				descriptionContent = "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.";
+			} else {
+				pageTitle.innerText = "Matias Larralde's Portfolio";
+				titleContent = "Matias Larralde's Portfolio";
+				descriptionContent = "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.";
+			}
+			// Set the metadata for social media sharing based on the user's language
+			let title = document.querySelectorAll(".title");
+			title.forEach((e) => e.setAttribute("content", titleContent || "Matias Larralde's Portfolio"));
+			let description = document.querySelectorAll(".description");
+			description.forEach((e) => e.setAttribute("content", descriptionContent || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."));
+		}
+		changeTitle();
+	</script>
+</body>
+</html>
