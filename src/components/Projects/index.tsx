@@ -45,7 +45,7 @@ function Projects() {
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoKasa} logoAlt={'Kasa'} content={
                             <Suspense fallback={<div>Loading...</div>}>
-                                <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
+                                <ContentModal logo={logoKasa} logoAlt={'Kasa'} projectName={'kasa'} icon={<FaGithub size="28" />} websiteLink={'https://kasa.up.railway.app'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_6'} />
                             </Suspense>
                             }
                         />
@@ -53,7 +53,7 @@ function Projects() {
                     <div className='flex justify-end h-4/6'>
                         <ProjectComponent logo={logoSophieBluel} logoAlt={'Sophie Bluel - Architecte d’intérieur'} content={
                             <Suspense fallback={<div>Loading...</div>}>
-                                <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
+                                <ContentModal logo={logoSophieBluel} logoAlt={'SophieBluel - Architecte d’intérieur'} projectName={'sophie-bluel'} icon={<FaGithub size="28" />} websiteLink={'https://sophie-bluel.up.railway.app'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_3'} />
                             </Suspense>
                             }
                         />
@@ -71,7 +71,7 @@ function Projects() {
                     <div className='flex justify-start h-4/6'>
                         <ProjectComponent logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} content={
                             <Suspense fallback={<div>Loading...</div>}>
-                                <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={'#'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
+                                <ContentModal logo={logoMonVieuxGrimoir} logoAlt={'Mon Vieux Grimoir'} projectName={'mon-vieux-grimoire'} icon={<FaGithub size="28" />} websiteLink={'https://mon-vieux-grimoir.up.railway.app'} gitHubLink={'https://github.com/MatiasLLL/OpenClassrooms_Project_7'} />
                             </Suspense>
                             }
                         />
