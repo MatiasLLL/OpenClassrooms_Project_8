@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import ssr from 'vite-plugin-ssr'
+// import ssr from 'vite-plugin-ssr'
 import react from '@vitejs/plugin-react-swc'
-import viteCompression from 'vite-plugin-compression';
+import compression from 'vite-plugin-compression2'
+// import viteCompression from 'vite-plugin-compression';
 
 // https://vitejs.dev/config/
 export default defineConfig({
