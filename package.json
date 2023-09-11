@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "npx http-server ./",
+    "start": "compression && npx http-server ./",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.16",
+    "compression": "^1.7.4",
     "framer-motion": "^10.16.1",
     "i18next": "^23.2.11",
     "i18next-browser-languagedetector": "^7.1.0",
