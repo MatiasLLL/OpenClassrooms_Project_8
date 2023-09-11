@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import viteCompression from 'vite-plugin-compression';
-// "build": "tsc && vite build",
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,9 +9,9 @@ export default defineConfig({
     viteCompression({
       verbose: true,
       disable: false,
-      threshold: 10240,
-      algorithm: 'brotliCompress',
-      ext: '.br'
+      threshold: 102400,
+      algorithm: 'gzip',
+      ext: '.gz'
     })
   ],
   server: {
@@ -20,3 +19,8 @@ export default defineConfig({
   },
   build: {outDir: 'public'}
 })
+
+// "build": "tsc && vite build",
+
+// algorithm: 'brotliCompress',
+// ext: '.br'
