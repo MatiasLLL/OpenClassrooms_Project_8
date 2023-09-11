@@ -1,6 +1,4 @@
 build:
-  env:
-    NODE_ENV: production
   steps:
     - run: npm install
     - run: npm run build
