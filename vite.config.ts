@@ -11,8 +11,8 @@ export default defineConfig({
       verbose: true,
       disable: false,
       threshold: 10240,
-      algorithm: 'gzip',
-      ext: '.gz'
+      algorithm: 'brotliCompress',
+      ext: '.br'
     })
   ],
   server: {
