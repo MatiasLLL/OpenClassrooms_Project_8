@@ -6,8 +6,6 @@ import Portfolio from './Portfolio.tsx'
 const LegalNotice = lazy(() => import ('./components/LegalNotice'))
 const PrivacyPolicy = lazy(() => import ('./components/PrivacyPolicy'))
 
-// import LegalNotice from './components/LegalNotice'
-// import PrivacyPolicy from './components/PrivacyPolicy'
 import './index.css'
 import './i18n'
 
