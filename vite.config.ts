@@ -26,7 +26,7 @@ export default defineConfig({
       verbose: true,
       disable: false,
       threshold: {
-        js: 1024000,
+        js: 10240000,
         css: 10240
       },
       algorithm: 'gzip',
