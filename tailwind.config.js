@@ -35,6 +35,7 @@ export default {
       'satoshi': ['Satoshi', 'sans-serif'],
     },
     screens: {
+      'minlg': {'min': '1030px'},
       'xl': {'max': '1200px'},
       'lg': {'max': '1030px'},
       'md': {'max': '770px'},
