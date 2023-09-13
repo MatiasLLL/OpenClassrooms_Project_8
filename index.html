@@ -111,13 +111,7 @@
 			let description = document.querySelectorAll(".description");
 			description.forEach((e) => e.setAttribute("content", descriptionContent || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."));
 		}
-		changeTitle();
 
-		// document.getElementById("html-tag").addEventListener("DOMAttrModified", function(e) {
-		// 	if (e.attrName === "lang") {
-		// 		changeTitle();
-		// 	}
-		// });
 		const observer = new MutationObserver((mutationsList) => {
 			for (let mutation of mutationsList) {
 				if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
