@@ -5,12 +5,12 @@ function PrivacyPolicy() {
     const { t } = useTranslation()
 
     return (
-        <main className='m-20 flex flex-col justify-center items-center h-full sm:mr-0 sm:mb-20'>
+        <main className='m-20 flex flex-col justify-center items-center h-full sm:m-12'>
             <h1>{t('privacy-policy.title')}</h1>
-            <div className='my-10  ml-12 w-3/5 flex flex-col align-middle items-start justify-center'>
-                <h2>{t('footer.privacy-policy-content.sentence1')}</h2>
-                <p>{t('footer.privacy-policy-content.sentence2')}</p>
-                <p>{t('footer.privacy-policy-content.sentence3')}</p>
+            <div className='my-10 w-3/5 flex flex-col align-middle items-start justify-center md:w-5/6 sm:w-full'>
+                <p>{t('privacy-policy.sentence1')}</p>
+                <p>{t('privacy-policy.sentence2')}</p>
+                <p>{t('privacy-policy.sentence3')}</p>
             </div>
             <Link className='mt-2 underline underline-offset-4' to='/' >{t('link.home')}</Link>
         </main>
@@ -20,6 +20,9 @@ function PrivacyPolicy() {
 export default PrivacyPolicy
 
 
+
+// "sentence3": "Si vous avez des questions ou des préoccupations concernant notre politique de confidentialité, veuillez nous contacter à "
+// "sentence3": "If you have any questions or concerns about our privacy policy, please contact us at "
 
 
 

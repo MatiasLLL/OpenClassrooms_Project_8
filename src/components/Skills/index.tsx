@@ -42,7 +42,7 @@ function Skills() {
                 <span className='inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2'></span>
             </h2>
             <div className='flex flex-row overflow-hidden lg:flex-wrap pb-3'>
-                <motion.section className='flex flex-col w-1/2 mr-4 xl:w-3/5 xl:mx-4 lg:w-full lg:items-center lg:mt-7' animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
+                <motion.section className='flex flex-col w-1/2 mr-4 xl:w-3/5 xl:mx-4 lg:w-full lg:items-center lg:mt-7' animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
                     <div className='flex justify-center pr-8 lg:pr-3 md:pr-0' ref={ref} >
                         <SkillsCard icon={HTML} iconAlt={'logo HTML'} text={'HTML'} />
                     </div>
@@ -70,7 +70,7 @@ function Skills() {
                         <span className='inline-block w-1 h-full bg-gradient-to-b from-white/40 to-white/70 rounded-full mr-2 lg:mr-0 lg:mb-1 lg:pb-0.5 lg:h-0.5 lg:w-full lg:bg-gradient-to-l'></span>
                         <span className='inline-block w-1 h-full bg-gradient-to-t from-white/40 to-white/70 rounded-full ml-0.5 lg:ml-0 lg:h-0.5 lg:w-full lg:bg-gradient-to-r'></span>
                     </div>
-                    <motion.ul className='flex flex-col place-content-evenly w-11/12 my-6 list-disc text-105 font-normal xl:text-95 lg:w-full lg:mx-20 lg:pl-9 lg:list-none lg:text-105 lg:gap-5 md:text-100 md:pl-3 sm:pl-5 xs:text-95 xs:mx-9 xs:pl-5' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 170, opacity: 0.8 }} transition={{ duration: 0.65, ease: 'easeOut' }} >
+                    <motion.ul className='flex flex-col place-content-evenly w-11/12 my-6 list-disc text-105 font-normal xl:text-95 lg:w-full lg:mx-20 lg:pl-9 lg:list-none lg:text-105 lg:gap-5 md:text-100 md:pl-3 sm:pl-5 xs:text-95 xs:mx-9 xs:pl-5' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
                         <li className='px-3 xl:pr-0 xs:px-6' itemProp="knows">{t('soft-skills.sentence1')}</li>
                         <li className='px-3 lg:pl-5 xs:px-6' itemProp="knows">{t('soft-skills.sentence2')}</li>
                         <li className='px-3 lg:pl-7 xs:px-6' itemProp="knows">{t('soft-skills.sentence3')}</li>

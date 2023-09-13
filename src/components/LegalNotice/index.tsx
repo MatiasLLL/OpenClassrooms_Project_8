@@ -5,12 +5,15 @@ function LegalNotice() {
     const { t } = useTranslation()
 
     return (
-        <main className='m-20 flex flex-col justify-center items-center h-full sm:mr-0 sm:mb-20'>
+        <main className='m-20 flex flex-col justify-center items-center h-full sm:m-12'>
             <h1>{t('legal-notice.title')}</h1>
-            <div className='my-10 ml-12 w-3/5 flex flex-col align-middle items-start justify-center'>
-                <h2>{t('footer.legal-notice-content.sentence1')}</h2>
-                <p>{t('footer.legal-notice-content.sentence2')}</p>
-                <p>{t('footer.legal-notice-content.sentence3')}</p>
+            <div className='my-10 w-3/5 flex flex-col align-middle items-start justify-center md:w-5/6 sm:w-full'>
+                <p>{t('legal-notice.sentence1')}</p>
+                <p>{t('legal-notice.sentence2')}</p>
+                <p className='pb-5'>email: matias.larralde97[at]gmail.com</p>
+                <p>{t('legal-notice.sentence3')}</p>
+                <p>{t('legal-notice.sentence4')}</p>
+                <p>{t('legal-notice.sentence5')}</p>
             </div>
             <Link className='mt-2 underline underline-offset-4' to='/' >{t('link.home')}</Link>
         </main>
@@ -19,17 +22,14 @@ function LegalNotice() {
 
 export default LegalNotice
 
-
-
-              
-// <h2>Définitions</h2>
-// <p><b>Client :</b> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
-// <b>Prestations et Services :</b> <a href="https://matias-larralde.fr">https://matias-larralde.fr</a> met à disposition des Clients :</p>
-
-// <p><b>Contenu :</b> Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.</p>
-
-// <p><b>Informations clients :</b> Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par <a href="https://matias-larralde.fr">https://matias-larralde.fr</a> pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.</p>
-
+// <p className="after:content-['gmail.com']">{t('legal-notice.sentence3')}
+//     <span className="before:content-['matias.larralde97']">
+//         @
+//     </span>
+//     <span className="sr-only hidden">
+//         fhoonoinoinoice.76t@domadhhndkdline.com
+//     </span>
+// </p>
 
 // <p><b>Utilisateur :</b> Internaute se connectant, utilisant le site susnommé.</p>
 // <p><b>Informations personnelles :</b> « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
@@ -39,9 +39,9 @@ export default LegalNotice
 // <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <a href="https://matias-larralde.fr">https://matias-larralde.fr</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
 // </p><p><strong>Propriétaire</strong> :   Matias Larralde   – 94 rue de Varenne 75007 Paris<br>
               
-// <strong>Responsable publication</strong> : Matias Larralde – matias.larralde97@gmail.com<br>
+// <strong>Responsable publication</strong> : Matias Larralde – <br>
 // Le responsable publication est une personne physique ou une personne morale.<br>
-// <strong>Webmaster</strong> : Matias Larralde – matias.larralde97@gmail.com<br>
+// <strong>Webmaster</strong> : Matias Larralde – <br>
 // <strong>Hébergeur</strong> : Hostinger – zzzzzzzzzzzzzzzzzz 00000 Paris 0101010101<br>
 // <strong>Délégué à la protection des données</strong> : Matias Larralde – matias.larralde97@gmail.com<br>
 // </p>
