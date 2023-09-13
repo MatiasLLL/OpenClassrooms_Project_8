@@ -4,7 +4,6 @@
 	<title id="page-title">Matias Larralde's Portfolio</title>
 	<meta charset="UTF-8" />
 	<link rel="icon" type="image/png" href="/assets/favicon-192x192-1e2c9884.png" />
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" class="description" content="Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.">
 	<!-- Open graph tags for social media sharing -->
@@ -45,7 +44,7 @@
 				"@type": "Project",
 				"position": 2,
 				"title": "Sophie Bluel",
-				"websiteUrl": https://sophie-bluel.up.railway.app"",
+				"websiteUrl": "https://sophie-bluel.up.railway.app",
 				"githubUrl": "https://github.com/MatiasLLL/OpenClassrooms_Project_3"
 			},
 			{
@@ -85,41 +84,47 @@
 		}
 	</script>
 
-	<script type="module" crossorigin src="/assets/index-82f768d2.js"></script>
-	<link rel="stylesheet" href="/assets/index-307429a4.css">
-	
-</head>
-
-<body class='bg-gradient-to-bl from-darkBlue via-blue to-stone bg-fixed text-white p-0 m-0 overflow-y-scroll font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-darkBlue scrollbar-track-darkBlue scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
-	<div id="root"></div>
-	
 	<script>
 		let userLang = navigator.language || navigator.userLanguage;
 		let lang = userLang || 'en';
 		document.getElementById("html-tag").lang = lang;
-		document.getElementById("locale-tag").setAttribute("content", lang);
 		
 		// Function to change the page <head> content based on the user's language
 		function changeTitle() {
-			let pageTitle = document.getElementById("page-title");
+			const htmlLang = document.documentElement.lang;
+			// let localeTagContent = '';
 			let titleContent = '';
 			let descriptionContent = '';
-			if (userLang.startsWith("fr")) {
-				pageTitle.innerText = "Matias Larralde - Portfolio";
+			if (htmlLang === "fr") {
+				document.getElementById("locale-tag").setAttribute("content", "fr");
 				titleContent = "Matias Larralde - Portfolio";
 				descriptionContent = "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.";
 			} else {
-				pageTitle.innerText = "Matias Larralde's Portfolio";
+				document.getElementById("locale-tag").setAttribute("content", "en");
 				titleContent = "Matias Larralde's Portfolio";
 				descriptionContent = "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio.";
 			}
 			// Set the metadata for social media sharing based on the user's language
+			document.getElementById("page-title").innerText = titleContent || "Matias Larralde's Portfolio";
 			let title = document.querySelectorAll(".title");
 			title.forEach((e) => e.setAttribute("content", titleContent || "Matias Larralde's Portfolio"));
 			let description = document.querySelectorAll(".description");
 			description.forEach((e) => e.setAttribute("content", descriptionContent || "Hi! I'm Matias Larralde and I'm excited that you are curious about my Portfolio."));
 		}
 		changeTitle();
+
+		document.getElementById("html-tag").addEventListener("DOMAttrModified", function(e) {
+			if (e.attrName === "lang") {
+				changeTitle();
+			}
+		});
 	</script>
+
+	<script type="module" crossorigin src="/assets/index-7cfba026.js"></script>
+	<link rel="stylesheet" href="/assets/index-307429a4.css">
+</head>
+
+<body class='bg-gradient-to-bl from-darkBlue via-blue to-stone bg-fixed text-white p-0 m-0 overflow-y-scroll font-inter font-normal scroll-smooth scrollbar scrollbar-thumb-darkBlue scrollbar-track-darkBlue scrollbar-w-0.5 scrollbar-thumb-rounded-full'>
+	<div id="root"></div>
 </body>
 </html>
