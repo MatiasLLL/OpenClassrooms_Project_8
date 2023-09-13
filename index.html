@@ -113,11 +113,19 @@
 		}
 		changeTitle();
 
-		document.getElementById("html-tag").addEventListener("DOMAttrModified", function(e) {
-			if (e.attrName === "lang") {
+		// document.getElementById("html-tag").addEventListener("DOMAttrModified", function(e) {
+		// 	if (e.attrName === "lang") {
+		// 		changeTitle();
+		// 	}
+		// });
+		const observer = new MutationObserver((mutationsList) => {
+			for (let mutation of mutationsList) {
+				if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
 				changeTitle();
+				}
 			}
 		});
+		observer.observe(document.documentElement, { attributes: true });
 	</script>
 
 	<script type="module" src="/assets/index-7cfba026.js"></script>
