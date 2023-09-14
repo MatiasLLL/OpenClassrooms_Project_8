@@ -7,7 +7,7 @@ function PrivacyPolicy() {
     return (
         <main className='m-20 flex flex-col justify-center items-center h-full sm:m-12'>
             <h1>{t('privacy-policy.title')}</h1>
-            <div className='my-10 w-3/5 flex flex-col align-middle items-start justify-center md:w-5/6 sm:w-full'>
+            <div className='my-10 flex flex-col align-middle items-start justify-center sm:w-full'>
                 <p>{t('privacy-policy.sentence1')}</p>
                 <p>{t('privacy-policy.sentence2')}</p>
                 <p>{t('privacy-policy.sentence3')}</p>

@@ -42,7 +42,7 @@ function Skills() {
                 <span className='inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2'></span>
             </h2>
             <div className='relative flex flex-row justify-around overflow-hidden lg:flex-wrap pb-3'>
-                <motion.section className='flex flex-col w-1/2 minlg:max-w-[496px] mr-4 xl:w-[58%] xl:mx-4 lg:w-full lg:items-center lg:mt-7' ref={ref} animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
+                <motion.section className='flex flex-col w-[45%] minlg:max-w-[496px] mr-4 xl:w-[58%] xl:mx-4 lg:w-full lg:items-center lg:mt-7' ref={ref} animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
                     <div className='flex justify-center pr-8 lg:pr-3 md:pr-0'>
                         <SkillsCard icon={HTML} iconAlt={'logo HTML'} text={'HTML'} />
                     </div>
@@ -65,12 +65,12 @@ function Skills() {
                         <SkillsCard icon={Node} iconAlt={'logo Node'} text={'Node - Express'} />
                     </div>
                 </motion.section>
-                <div className='w-1/12 flex flex-row mr-11 xl:mr-8 lg:flex-col lg:w-full lg:mx-20 lg:pb-8 lg:pt-5 md:pb-6 sm:mx-20 sm:pb-5 xs:mx-24'>
+                <div className='w-[3%] flex flex-row justify-center xl:mr-8 lg:flex-col lg:w-full lg:mx-20 lg:pb-8 lg:pt-5 md:pb-6 sm:mx-20 sm:pb-5 xs:mx-24'>
                     <span className='inline-block w-1 h-full bg-gradient-to-b from-white/40 to-white/70 rounded-full mr-2 lg:mr-0 lg:mb-1 lg:pb-0.5 lg:h-0.5 lg:w-full lg:bg-gradient-to-l'></span>
                     <span className='inline-block w-1 h-full bg-gradient-to-t from-white/40 to-white/70 rounded-full ml-0.5 lg:ml-0 lg:h-0.5 lg:w-full lg:bg-gradient-to-r'></span>
                 </div>
-                <section className='relative min2xl:left-[-12rem] minxl:right-[5rem] flex flex-row pl-1 pr-2 py-7 text-white xl:w-2/5 xl:pr-0 lg:mx-20  lg:w-full lg:flex-wrap lg:pb-0 sm:mx-4 xs:mx-0'>
-                    <motion.ul className='flex flex-col place-content-evenly w-full my-6 list-disc text-105 font-normal xl:text-95 lg:w-full lg:mx-20 lg:pl-9 lg:list-none lg:text-105 lg:gap-5 md:text-100 md:pl-3 sm:pl-5 xs:text-95 xs:mx-9 xs:pl-5' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
+                <section className='relative w-[45%] minlg:max-w-[496px] min2xl:left-[-4rem] minxl:right-[0rem] flex flex-row pl-1 pr-2 py-7 text-white xl:w-2/5 xl:pr-0 lg:mx-20 lg:w-full lg:flex-wrap lg:pb-0 sm:mx-4 xs:mx-0'>
+                    <motion.ul className='flex flex-col place-content-evenly w-full my-6 ml-6 list-disc text-105 font-normal xl:text-95 lg:w-full lg:mx-20 lg:pl-9 lg:list-none lg:text-105 lg:gap-5 md:text-100 md:pl-3 sm:pl-5 xs:text-95 xs:mx-9 xs:pl-5' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
                         <li className='px-3 xl:pr-0 xs:px-6' itemProp="knows">{t('soft-skills.sentence1')}</li>
                         <li className='px-3 lg:pl-5 xs:px-6' itemProp="knows">{t('soft-skills.sentence2')}</li>
                         <li className='px-3 lg:pl-7 xs:px-6' itemProp="knows">{t('soft-skills.sentence3')}</li>
