@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <>
       <NavBar />
-      <main className='mr-20 h-full lg:mr-0 lg:mb-20'>
+      <main className='mr-20 h-full lg:mr-0 lg:mb-20 flex flex-col min2xl:justify-center'>
         <Header />
         <About />
         <Skills />

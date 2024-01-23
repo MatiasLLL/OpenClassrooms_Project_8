@@ -5,10 +5,10 @@ import picBayBridgeResponsive from '../../assets/photos/pic-bay-bridge-responsiv
 function About() {
     const { t } = useTranslation()
         return (
-            <section className='flex flex-row justify-around min-h-fit mx-24 mt-9 mb-20 py-3 px-7 lg:min-h-80 lg:mx-[7%] lg:py-1 lg:px-3 md:flex-wrap md:mb-8 md:px-2' itemScope itemType='https://schema.org/Person'>
-                <div className='h-full w-3/5 mr-1 md:w-5/6 sm:w-full'>
+            <section className='max-w-[1500px] min2xl:items-center flex flex-row justify-around min-h-[53vh] mx-24 mt-9 mb-20 py-3 px-7 lg:min-h-80 lg:mx-[7%] lg:py-1 lg:px-3 md:flex-wrap md:mb-8 md:px-2' itemScope itemType='https://schema.org/Person'>
+                <div className='h-full w-3/5 p-3 mr-1 md:w-5/6 sm:w-full'>
                     <h1 className='text-140 mb-4 xl:text-120 lg:text-110 md:text-135 sm:text-115'>{t('about.title')}</h1>
-                    <p itemProp='description' className='text-105 xl:text-100 lg:text-95 h-full md:text-100'>
+                    <p itemProp='description' className='text-110 xl:text-100 lg:text-95 h-full md:text-100'>
                         {t('about.sentence1')}<br/>
                         {t('about.sentence2')}<br/>
                         {t('about.sentence3')}
@@ -28,8 +28,3 @@ function About() {
 
 export default About
 
-
-// srcset="./assets/images/slider/nicholas-green-650-unsplash.jpg 650w,
-//         ./assets/images/slider/nicholas-green-1000-unsplash.jpg 1000w,
-//         ./assets/images/slider/nicholas-green-unsplash.jpg 1600w"
-// sizes="(max-width: 650px) 650px, (max-width: 1000px) 1000px, (min-width: 1001px) 1600px"

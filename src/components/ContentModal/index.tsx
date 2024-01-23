@@ -23,12 +23,12 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
                     <p className='lg:text-95 md:text-90 mr-8 leading-relaxed lg:leading-6 sm:text-85 sm:leading-[1.35rem] xs:leading-5 xs:mr-0' itemProp='description'>
                     {t(`projects.${projectName}.description`)}
                     </p>
-                    <p className='lg:text-95 md:text-90 mr-8 leading-relaxed lg:leading-6 sm:text-85 sm:leading-[1.4rem] xs:leading-5 xs:mr-0'>
+                    {/* <p className='lg:text-95 md:text-90 mr-8 leading-relaxed lg:leading-6 sm:text-85 sm:leading-[1.4rem] xs:leading-5 xs:mr-0'>
                     {t(`projects.${projectName}.difficulties`)}
                     </p>
                     <p className='lg:text-95 md:text-90 mr-8 mb-3 leading-relaxed lg:leading-6 sm:text-85 sm:leading-[1.4rem] xs:leading-5 xs:mr-0 xs:mb-0'>
                     {t(`projects.${projectName}.technologies`)}
-                    </p>
+                    </p> */}
                 </div>
                 {websiteLink === '#' && gitHubLink !== '' ? (
                     <a href={websiteLink} className='w-1/3 md:w-[30%] outline-none flex flex-col items-center xs:w-full xs:mx-12 xs:my-4'>
@@ -67,5 +67,3 @@ function ContentModal({ logo, logoAlt, projectName, icon, websiteLink, gitHubLin
 }
 
 export default ContentModal;
-
-// Remove <p> l-26 to 31 - after Diploma
