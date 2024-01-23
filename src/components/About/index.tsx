@@ -11,8 +11,7 @@ function About() {
                     <p itemProp='description' className='text-105 xl:text-100 lg:text-95 h-full md:text-100'>
                         {t('about.sentence1')}<br/>
                         {t('about.sentence2')}<br/>
-                        {t('about.sentence3')}<br/>
-                        {t('about.sentence4')}
+                        {t('about.sentence3')}
                     </p>
                 </div>
                 <div className='w-2/5 h-auto ml-14 aspect-auto rounded-lg shadow-sm shadow-blue/20 xl:ml-7 lg:ml-[3.5%] md:w-2/3 md:ml-0 md:mt-20 md:mb-6 md:rounded-xl sm:w-11/12 sm:md:mt-16 sm:mb-2'>
