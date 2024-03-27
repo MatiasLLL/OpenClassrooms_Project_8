@@ -1,27 +1,35 @@
-/* eslint-env node */
-
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: {
+    browser: true,
+    es2021: true,
+  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:react-hooks/recommended',
+    'plugin:react/recommended', // Assuming you're using React
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: true,
-    tsconfigRootDir: __dirname,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: ['react-refresh'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    // Do not include 'prettier' here
+  ],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-    '@typescript-eslint/no-non-null-assertion': 'off',
+    // Add your custom rules or override here
+    'react/react-in-jsx-scope': 'off', // For React 17+ you don't need to import React when using JSX
+    // You can add other rules that you prefer to enforce in your project
   },
-}
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+};

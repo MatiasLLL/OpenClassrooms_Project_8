@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "bunx --bun http-server ./",
+    "start": "bun http-server ./dist",
     "dev": "bunx --bun vite",
     "build": "bunx --bun tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -14,6 +14,7 @@
     "@headlessui/react": "^1.7.16",
     "compression": "^1.7.4",
     "framer-motion": "^10.16.1",
+    "http-server": "^14.1.1",
     "i18next": "^23.2.11",
     "i18next-browser-languagedetector": "^7.1.0",
     "react": "^18.2.0",
