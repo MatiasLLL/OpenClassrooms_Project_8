@@ -21,6 +21,8 @@ COPY . .
 # Install your application's dependencies
 RUN bun install
 
+RUN bun add serve
+
 # Build your application
 RUN bun run build
 
