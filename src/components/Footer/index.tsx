@@ -1,16 +1,19 @@
+import React from 'react';
 import { ReactElement } from 'react';
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 import { IconType } from 'react-icons';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+interface LinkFooterProps {
+    icon: ReactElement<IconType>;
+    text: string;
+    link: string;
+}
+
 function Footer() {
     const { t } = useTranslation()
-    type LinkFooterProps = {
-        icon: ReactElement<IconType>;
-        text: string;
-        link: string;
-    }
+    
     const LinkFooter = ({icon, text, link}: LinkFooterProps) => (
         <a href={link} target='_blank' className='flex flex-row items-center text-100 md:text-90 sm:text-85 xs:text-80 hover:text-white/70'>
             <i className='mr-2 md:scale-95'>{icon}</i>
@@ -40,4 +43,5 @@ function Footer() {
     )
 }
 
-export default Footer
+// export default Footer
+export default React.memo(Footer);

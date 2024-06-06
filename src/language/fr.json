@@ -8,10 +8,9 @@
         "language": "FR/EN"
     },
     "about": {
-        "title": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'oeil à mon portfolio.",
-        "sentence1": "Par mes expériences plutôt variées, allant de la restauration, la mise en place d'événements ou encore l'agriculture urbaine, j'ai pu acquérir de nombreuses compétences que je peux utiliser dans le développement web; mon regard unique peut apporter de la créativité à une équipe !",
-        "sentence2": "Cela renforce ma soif d'apprendre et de maîtriser de nouvelles technologies, langages de programmation ou frameworks.",
-        "sentence3": "Je sais que j'ai trouvé ma voie dans la programmation."
+        "title": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'œil à mon portfolio.",
+        "sentence1": "Arrivé dans le monde de la tech avec un parcours diversifié, j'ai acquis de nombreuses compétences que j'applique maintenant au code.",
+        "sentence2": "Cela nourrit ma soif d'apprendre et de maîtriser de nouvelles technologies ; chaque jour est un nouveau défi !"
     },
     "skills": {
         "title2": "Compétences"
@@ -25,56 +24,59 @@
         "sentence5": "Avoir le sens du détail"
     },
     "projects": {
-        "title2": "Projets",
+        "title2": "Dernier Projets",
+        "button-show-more": "Afficher plus",
+        "button-show-less": "Afficher moins",
         "github-link": "Lien vers le repository GitHub",
         "booki": {
             "title" : "OpenClassrooms - Projet 2",
-            "description": "Ce fût mon premier projet où j'ai dû transformer une maquette en une page web responsive en utilisant HTML et CSS, comprenant versions mobiles, tablettes et ordinateurs. J'ai veillé à respecter la sémantique web, la compatibilité avec Google Chrome et Mozilla Firefox, et vérifié mon code avec les validateurs HTML et CSS du W3C.",
-            "website-link": "Lien vers le site",
-            "difficulties": "Je n'ai pas vraiment rencontré de difficultés.",
-            "technologies": "J'ai utilisé HTML et CSS pour ce projet."
+            "description": "Ce fut le premier projet de ma formation OpenClassrooms. J'ai transformé une maquette en une page web responsive en utilisant HTML et CSS, en veillant à respecter la sémantique web, la compatibilité avec les principaux navigateurs, et la validité du code avec les validateurs W3C.",
+            "website-link": "Lien vers le site"
         },
         "sophie-bluel": {
             "title" : "OpenClassrooms - Projet 3",
-            "description": "Pour ce projet, j'ai implémenté plusieurs fonctionnalités en JavaScript, notamment la récupération de données depuis une API avec fetch, ainsi que le filtrage de celles-ci. J'ai également intégré une page de connexion et une modale permettant l'ajout, la modification et la suppression de données, à la fois sur la page et sur l'API.",
-            "website-link": "Lien vers le site",
-            "difficulties": "J'ai rencontré un soucis après avoir push mon backend sur GitHub, j'ai donc créé un nouveau repository pour ce projet.",
-            "technologies": "J'ai utilisé HTML, CSS et JavaScript pour ce projet."
+            "description": "J'ai implémenté en JavaScript des fonctionnalités telles que la récupération dynamique et le filtrage des données via une API; intégré une page de connexion ainsi qu'une modale pour ajouter, modifier et supprimer des données à la fois sur la page et en base de données.",
+            "website-link": "Lien vers le site"
         },
         "qwenta": {
             "title" : "OpenClassrooms - Projet 4",
-            "description": "Ce projet est le seul qui ne contient pas de code, consitant en la planification du développement d'un site. J'ai donc réalisé les spécifications techniques, effectué une veille des différents aspects techniques du projet, et mis en place un tableau Kanban pour la gestion du projet.",
-            "website-link": "Cliquez pour télécharger le projet",
-            "difficulties": "J'ai eu des difficultés à écrire correctement mes spécifications techniques, mais après de bonnes recherches, j'ai réussi !",
-            "technologies": "J'ai utilisé Google Slides, Notion and Wakelet pour ce projet."
+            "description": "Ce projet impliquait la planification du développement d'un site web. J'ai rédigé les spécifications techniques, recherché les technologies nécessaires, et mis en place un tableau Kanban pour la gestion de projet.",
+            "website-link": "Cliquez pour télécharger le projet"
         },
         "nina-carducci": {
             "title" : "OpenClassrooms - Projet 5",
-            "description": "Pour ce projet, j'ai dû optimiser les images du site, son code ainsi que sa structure. J'ai également débogué les fonctionnalités du site qui ne fonctionnaient pas et ajouté le référencement local et les réseaux sociaux en utilisant les balises meta et Schema.org.",
-            "website-link": "Lien vers le site",
-            "difficulties": "Il m'a fallu un peu de temps pour maîtriser l'optimisation des images.",
-            "technologies": "J'ai utilisé HTML, CSS et JavaScript ainsi que divers outils analytiques tels que Google Lighthouse pour ce projet."
+            "description": "J'ai optimisé les images, le code et la structure du site web. J'ai également débugué des fonctionnalités, ajouté le SEO local et l'intégration des réseaux sociaux en utilisant des balises meta et Schema.org.",
+            "website-link": "Lien vers le site"
         },
         "kasa": {
             "title" : "OpenClassrooms - Projet 6",
-            "description": "Pour ce projet React, j'ai utilisé React Router pour configurer la navigation entre les pages, conçu des composants React utilisés ensuite dans les différentes pages, réalisé des animations CSS avec SASS, et implémenté une page 404 pour les routes inexistantes.",
-            "website-link": "Lien vers le site",
-            "difficulties": "J'ai eu un peu de mal à réaliser le fetch des données d'un logement, mais avec persévérance j'ai réussi.",
-            "technologies": "J'ai utilisé React.js et Sass pour ce projet."
+            "description": "Pour ce projet React, j'ai utilisé React Router pour configurer la navigation, créé des composants React, ajouté des animations CSS avec SASS et implémenté une page 404.",
+            "website-link": "Lien vers le site"
         },
         "mon-vieux-grimoire": {
             "title" : "OpenClassrooms - Projet 7",
-            "description": "Ce fût le dernier projet de ma formation OpenClassrooms avec une feuille de route. Cette fois-ci, j'ai conçu un serveur Express, une API RESTful, mis en place un système d'authentification et implémenté des opérations CRUD de manière sécurisée.",
-            "website-link": "Lien vers le site",
-            "difficulties": "J'ai eu des difficultés à utiliser Sharp pour optimiser les images, mais lorsque j'ai trouvé comment renommer correctement le fichier optimisé, tout a fonctionné !",
-            "technologies": "J'ai utilisé Node.js et Express.js pour ce projet."
+            "description": "J'ai développé un serveur Express, une API RESTful, mis en place un système d'authentification et implémenté des opérations CRUD sécurisées.",
+            "website-link": "Lien vers le site"
         },
         "my-portfolio": {
             "title" : "OpenClassrooms - Projet 8",
-            "description": "Ce portfolio était mon premier projet libre de A à Z. Je l'ai initialisé avec Vite et j'ai appris de nouvelles technologies telles que TypeScript et Tailwind. Les fonctionnalités qui me tenaient le plus à cœur d'intégrer sont la traduction avec la librairie i18n; ainsi que la fenêtre qui apporte des précisions sur chacun des projets réalisés lors de ma formation.",
-            "website-link": "Vous êtes déjà sur le portfolio !",
-            "difficulties": "Le choix de couleurs ne fût pas facile étant daltonien, mais après de nombreux essais, j'en suis maintenant satisfait.",
-            "technologies": "J'ai utilisé React, Typescript et Tailwind pour ce projet."
+            "description": "Mon portfolio est mon premier projet sans plan d'action. Je l'ai initialisé avec Vite, puis conçu avec React, TypeScript et Tailwind, et implémenté la traduction avec la librairie i18n.",
+            "website-link": "Vous êtes déjà sur le portfolio !"
+        },
+        "pawa": {
+            "title" : "PAWA Token",
+            "description": "C'est le premier token que j'ai créé pour apprendre Solidity. J'ai utilisé les librairies Hardhat et OpenZeppelin pour le construire et l'ai déployé sur le réseau Polygon en utilisant Infura comme fournisseur de nœuds RPC.",
+            "website-link": "Lien vers le site"
+        },
+        "spacedolphin": {
+            "title" : "SpaceDolphin",
+            "description": "SpaceDolphin est mon deuxième projet d'altcoin. Je l'ai déployé sur le réseau Base avec le service RPC d'Alchemy. Je prévois également de créer des NFTs SpaceDolphin à l'avenir.",            
+            "website-link": "Lien vers le site"
+        },
+        "flashloan": {
+            "title" : "Flash Loan",
+            "description": "J'ai développé un bot d'arbitrage de flash loan sur le réseau Polygon en utilisant Aave et Ethers.js pour exploiter les écarts de prix entre les échanges. J'ai créé le contrat de mon flash loan et des scripts pour détecter les opportunités d'arbitrage et automatiser les interactions avec mon Flash Loan. Ce projet met en valeur mes compétences en développement de smart contracts et ma compréhension des dynamiques de marché DeFi.",
+            "website-link": ""
         }
     },
     "footer": {

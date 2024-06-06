@@ -21,3 +21,30 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+
+
+
+# ESLint configuration
+.eslintrc.js
+.eslintrc.cjs
+.eslintrc.json
+.eslintrc.yaml
+.eslintrc.yml
+
+# Prettier configuration
+.prettierrc
+.prettierrc.js
+.prettierrc.json
+.prettierrc.yaml
+.prettierrc.yml
+.prettierrc.toml
+
+# ESLint ignore file
+.eslintignore
+
+# Prettier ignore file
+.prettierignore
+
+# oothers
+commands.txt
+/Trash

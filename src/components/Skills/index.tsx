@@ -1,86 +1,263 @@
-import { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useInView } from 'react-intersection-observer';
-import { motion } from 'framer-motion';
-import HTML from '../../assets/skills/logo-html.svg';
-import CSS from '../../assets/skills/logo-css.svg';
-import JavaScript from '../../assets/skills/logo-javascript.svg';
-import Sass from '../../assets/skills/logo-sass.svg';
-import TypeScript from '../../assets/skills/logo-typescript.svg';
-import Tailwind from '../../assets/skills/logo-tailwind.svg';
-import React from '../../assets/skills/logo-react.svg';
-import Node from '../../assets/skills/logo-node.svg';
+import skillsData from '../../data/skills.json';
+import HTMLLogo from '../../assets/skills/logo-html.svg';
+import CSSLogo from '../../assets/skills/logo-css.svg';
+import JavaScriptLogo from '../../assets/skills/logo-javascript.svg';
+import SassLogo from '../../assets/skills/logo-sass.svg';
+import TypeScriptLogo from '../../assets/skills/logo-typescript.svg';
+import TailwindLogo from '../../assets/skills/logo-tailwind.svg';
+import ReactLogo from '../../assets/skills/logo-react.svg';
+import NodeLogo from '../../assets/skills/logo-node.svg';
+import PythonLogo from '../../assets/skills/logo-python.svg';
+import SolidityLogo from '../../assets/skills/logo-solidity.svg';
+import InfiniteMovingCards from '../ui/infinite-moving-cards';
 
-function Skills() {
-    const { t } = useTranslation()
-    const { ref, inView } = useInView();
-    const [hasAnimated, setHasAnimated] = useState(false);
-    useEffect(() => {
-        if (inView && !hasAnimated) {
-        setHasAnimated(true);
-        }
-    }, [inView, hasAnimated]);
-    type SkillsCardProps = {
-        icon: string;
-        iconAlt: string;
-        text: string;
-    }
-    const SkillsCard = ({icon, text, iconAlt}: SkillsCardProps) => (
-        <div className='flex flex-col items-center justify-center text-105 sm:text-90 my-5 lg:my-7 lg:py-0.5 sm:my-5 xs:my-3' itemProp="skill">
-            <div className='w-[47px] h-[36px] flex justify-center items-center mb-[0.35rem]'>
-                <img className='h-full w-full object-contain' src={icon} alt={iconAlt} style={text === 'Tailwind' ? { marginBottom: '0.7rem' } : {}} />
-            </div>
-            <span className='text-white text-center'>{text}</span>
-        </div>
-    )
+const logoMap: { [key: string]: string } = {
+    SolidityLogo,
+    PythonLogo,
+    NodeLogo,
+    ReactLogo,
+    TailwindLogo,
+    SassLogo,
+    TypeScriptLogo,
+    JavaScriptLogo,
+    CSSLogo,
+    HTMLLogo,
+};
 
-    return (
-        <section id="skills" className='flex flex-col justify-around mx-24 my-7 lg:mx-[5%] md:mx-0 xs:mb-0 lg:pt-4' itemScope itemType="https://schema.org/Person">
-            <h2 className='flex flex-row text-150 my-8 pb-8 items-center w-full md:px-[8%] sm:mb-4 sm:text-145 xs:text-140'>
-                <span className='inline-block w-1/5 h-0.5 bg-white mr-6 rounded-full md:w-1/2'></span>
-                {t('skills.title2')}
-                <span className='inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2'></span>
-            </h2>
-            <div className='relative flex flex-row justify-around overflow-hidden lg:flex-wrap pb-3'>
-                <motion.section className='flex flex-col w-[45%] minlg:max-w-[496px] mr-4 xl:w-[58%] xl:mx-4 lg:w-full lg:items-center lg:mt-7' ref={ref} animate={ hasAnimated  ? { x: 0, opacity: 1 } : { x: -250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
-                    <div className='flex justify-center pr-8 lg:pr-3 md:pr-0'>
-                        <SkillsCard icon={HTML} iconAlt={'logo HTML'} text={'HTML'} />
-                    </div>
-                    <div className='flex justify-center items-center pl-5 pr-6 ml-14 w-4/5 xl:pl-10 xl:pr-10 lg:w-7/12 lg:pl-6 lg:pr-14 lg:ml-16 lg:mr-2 md:mr-6 md:pr-11 md:pl-7 sm:pl-2 sm:pr-7 xs:ml-[3.25rem] xs:mr-1 xs:pl-1 xs:pr-8'>
-                        <SkillsCard icon={CSS} iconAlt={'logo CSS'} text={'CSS'} />
-                        <span className='inline-block w-1/2 h-0.5 bg-white lg:bg-white/20 ml-6 mr-4 xl:pl-2 lg:mr-4 lg:ml-6 lg:px-8 rounded-full md:pl-9 md:ml-5 md:pr-10 md:mr-3 sm:w-3/4 '></span>
-                        <SkillsCard icon={JavaScript} iconAlt={'logo JavaScript'} text={'JavaScript'} />
-                    </div>
-                    <div className='flex justify-center items-center lg:mx-12 lg:w-11/12 lg:pl-10 lg:pr-5 sm:pl-6 sm:pr-1 xs:pr-0 xs:pl-4'>
-                        <SkillsCard icon={Sass} iconAlt={'logo Sass'} text={'Sass'} />
-                        <span className='inline-block w-3/5 h-0.5 bg-white lg:bg-white/20 ml-7 mr-6 rounded-full'></span>
-                        <SkillsCard icon={TypeScript} iconAlt={'logo TypeScript'} text={'TypeScript'} />
-                    </div>
-                    <div className='flex justify-center items-center pl-3 pr-5 ml-12 w-3/4 xl:pl-7 xl:pr-7 lg:w-7/12 lg:pl-5 lg:pr-20 lg:ml-18 lg:mr-2 md:mr-3 md:pr-16 sm:pl-1 sm:pr-12 xs:ml-9 xs:mr-0 xs:pl-0 xs:pr-11'>
-                        <SkillsCard icon={Tailwind} iconAlt={'logo Tailwind'} text={'Tailwind'} />
-                        <span className='inline-block w-1/2 h-0.5 bg-white lg:bg-white/20 ml-4 mr-7 pr-10 lg:mr-6 lg:ml-3 lg:pr-12 lg:pl-7 rounded-full md:pr-14 md:pl-6 md:mr-6 md:ml-4 sm:w-3/4'></span>
-                        <SkillsCard icon={React} iconAlt={'logo React'} text={'React'} />
-                    </div>
-                    <div className='flex justify-center pr-3 lg:pr-0'>
-                        <SkillsCard icon={Node} iconAlt={'logo Node'} text={'Node - Express'} />
-                    </div>
-                </motion.section>
-                <div className='w-[3%] flex flex-row justify-center xl:mr-8 lg:flex-col lg:w-full lg:mx-20 lg:pb-8 lg:pt-5 md:pb-6 sm:mx-20 sm:pb-5 xs:mx-24'>
-                    <span className='inline-block w-1 h-full bg-gradient-to-b from-white/40 to-white/70 rounded-full mr-2 lg:mr-0 lg:mb-1 lg:pb-0.5 lg:h-0.5 lg:w-full lg:bg-gradient-to-l'></span>
-                    <span className='inline-block w-1 h-full bg-gradient-to-t from-white/40 to-white/70 rounded-full ml-0.5 lg:ml-0 lg:h-0.5 lg:w-full lg:bg-gradient-to-r'></span>
-                </div>
-                <section className='relative w-[45%] minlg:max-w-[496px] min2xl:left-[-4rem] minxl:right-[0rem] flex flex-row pl-1 pr-2 py-7 text-white xl:w-2/5 xl:pr-0 lg:mx-20 lg:w-full lg:flex-wrap lg:pb-0 sm:mx-4 xs:mx-0'>
-                    <motion.ul className='flex flex-col place-content-evenly w-full my-6 ml-6 list-disc text-105 font-normal xl:text-95 lg:w-full lg:mx-20 lg:pl-9 lg:list-none lg:text-105 lg:gap-5 md:text-100 md:pl-3 sm:pl-5 xs:text-95 xs:mx-9 xs:pl-5' animate={hasAnimated  ? { x: 0, opacity: 1 } : { x: 250, opacity: 0.8 }} transition={{ duration: 0.85, ease: 'easeOut' }} >
-                        <li className='px-3 xl:pr-0 xs:px-6' itemProp="knows">{t('soft-skills.sentence1')}</li>
-                        <li className='px-3 lg:pl-5 xs:px-6' itemProp="knows">{t('soft-skills.sentence2')}</li>
-                        <li className='px-3 lg:pl-7 xs:px-6' itemProp="knows">{t('soft-skills.sentence3')}</li>
-                        <li className='px-3 lg:pl-9 xs:px-6' itemProp="knows">{t('soft-skills.sentence4')}</li>
-                        <li className='px-3 lg:pl-11 xs:px-6' itemProp="knows">{t('soft-skills.sentence5')}</li>
-                    </motion.ul>
-                </section>
-            </div>
-      </section>
-    )
+interface SkillsCardProps {
+    icon: string;
+    iconAlt: string;
+    text: string;
 }
 
-export default Skills
+function Skills() {
+    const { t } = useTranslation();
+
+    const skills: SkillsCardProps[] = useMemo(() => skillsData, []);
+
+    const items = useMemo(
+        () =>
+            skills.map(skill => ({
+                icon: logoMap[skill.icon],
+                iconAlt: skill.iconAlt,
+                text: skill.text,
+            })),
+        [skills]
+    );
+
+    return (
+        <section
+            id="skills"
+            className="flex flex-col justify-around mx-24 my-7 lg:mx-[5%] md:mx-0 xs:mb-0 lg:pt-4"
+            itemScope
+            itemType="https://schema.org/Person"
+        >
+            <h2 className="flex flex-row text-150 my-8 pb-8 items-center w-full md:px-[8%] sm:mb-4 sm:text-145 xs:text-140">
+                <span className="inline-block w-1/5 h-0.5 bg-white mr-6 rounded-full md:w-1/2"></span>
+                {t('skills.title2')}
+                <span className="inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2"></span>
+            </h2>
+            <InfiniteMovingCards
+                items={items}
+                direction="right"
+                speed="normal"
+                pauseOnHover={false}
+                className="mt-1"
+            />
+            <div className="relative flex flex-col items-center w-full py-14 text-white lg:mx-20 lg:pb-0 sm:mx-0 xs:mx-0">
+                <ul className="w-full align-center max-w-3xl mx-5 sm:mx-2 text-110 font-normal list-none grid grid-cols-2 gap-3 lg:text-105 sm:text-100 sm:pl-2 xs:text-100 sm:grid-cols-1 sm:w-2/3 xs:w-3/4 justify-center">
+                    <li className="my-2 text-left">
+                        {t('soft-skills.sentence1')}
+                    </li>
+                    <li className="my-2 text-left">
+                        {t('soft-skills.sentence2')}
+                    </li>
+                    <li className="my-2 text-left">
+                        {t('soft-skills.sentence3')}
+                    </li>
+                    <li className="my-2 text-left">
+                        {t('soft-skills.sentence4')}
+                    </li>
+                    <li className="my-2 text-left">
+                        {t('soft-skills.sentence5')}
+                    </li>
+                </ul>
+            </div>
+        </section>
+    );
+}
+
+export default React.memo(Skills);
+
+// import React, { useMemo } from 'react';
+// import { useTranslation } from 'react-i18next';
+// import skillsData from '../../data/skills.json';
+// import HTMLLogo from '../../assets/skills/logo-html.svg';
+// import CSSLogo from '../../assets/skills/logo-css.svg';
+// import JavaScriptLogo from '../../assets/skills/logo-javascript.svg';
+// import SassLogo from '../../assets/skills/logo-sass.svg';
+// import TypeScriptLogo from '../../assets/skills/logo-typescript.svg';
+// import TailwindLogo from '../../assets/skills/logo-tailwind.svg';
+// import ReactLogo from '../../assets/skills/logo-react.svg';
+// import NodeLogo from '../../assets/skills/logo-node.svg';
+// import PythonLogo from '../../assets/skills/logo-python.svg';
+// import SolidityLogo from '../../assets/skills/logo-solidity.svg';
+// import InfiniteMovingCards from '../ui/infinite-moving-cards';
+
+// const logoMap = {
+//     SolidityLogo,
+//     PythonLogo,
+//     NodeLogo,
+//     ReactLogo,
+//     TailwindLogo,
+//     SassLogo,
+//     TypeScriptLogo,
+//     JavaScriptLogo,
+//     CSSLogo,
+//     HTMLLogo,
+// };
+
+// interface SkillsCardProps {
+//     icon: string;
+//     iconAlt: string;
+//     text: string;
+// }
+
+// function Skills() {
+//     const { t } = useTranslation();
+
+//     const skills: SkillsCardProps[] = useMemo(() => skillsData, []);
+
+//     const items = useMemo(
+//         () =>
+//             skills.map(skill => ({
+//                 icon: logoMap[skill.icon],
+//                 iconAlt: skill.iconAlt,
+//                 text: skill.text,
+//             })),
+//         [skills]
+//     );
+
+//     // const skills: SkillsCardProps[] = useMemo(
+//     //     () => [
+//     //         {
+//     //             icon: SolidityLogo,
+//     //             iconAlt: 'logo Solidity',
+//     //             text: 'Solidity Hardhat',
+//     //         },
+//     //         { icon: PythonLogo, iconAlt: 'logo Python', text: 'Python Flask' },
+//     //         { icon: NodeLogo, iconAlt: 'logo Node', text: 'Node Express' },
+//     //         { icon: ReactLogo, iconAlt: 'logo React', text: 'React' },
+//     //         { icon: TailwindLogo, iconAlt: 'logo Tailwind', text: 'Tailwind' },
+//     //         { icon: SassLogo, iconAlt: 'logo Sass', text: 'Sass' },
+//     //         {
+//     //             icon: TypeScriptLogo,
+//     //             iconAlt: 'logo TypeScript',
+//     //             text: 'TypeScript',
+//     //         },
+//     //         {
+//     //             icon: JavaScriptLogo,
+//     //             iconAlt: 'logo JavaScript',
+//     //             text: 'JavaScript',
+//     //         },
+//     //         { icon: CSSLogo, iconAlt: 'logo CSS', text: 'CSS' },
+//     //         { icon: HTMLLogo, iconAlt: 'logo HTML', text: 'HTML' },
+//     //     ],
+//     //     []
+//     // );
+
+//     // const items = useMemo(
+//     //     () =>
+//     //         skills.map(skill => ({
+//     //             icon: skill.icon,
+//     //             iconAlt: skill.iconAlt,
+//     //             text: skill.text,
+//     //         })),
+//     //     [skills]
+//     // );
+
+//     return (
+//         <section
+//             id="skills"
+//             className="flex flex-col justify-around mx-24 my-7 lg:mx-[5%] md:mx-0 xs:mb-0 lg:pt-4"
+//             itemScope
+//             itemType="https://schema.org/Person"
+//         >
+//             <h2 className="flex flex-row text-150 my-8 pb-8 items-center w-full md:px-[8%] sm:mb-4 sm:text-145 xs:text-140">
+//                 <span className="inline-block w-1/5 h-0.5 bg-white mr-6 rounded-full md:w-1/2"></span>
+//                 {t('skills.title2')}
+//                 <span className="inline-block w-4/5 h-0.5 bg-white ml-6 rounded-full md:w-1/2"></span>
+//             </h2>
+//             <InfiniteMovingCards
+//                 items={items}
+//                 direction="right"
+//                 speed="normal"
+//                 pauseOnHover={false}
+//                 className="mt-1"
+//             />
+//             <div className="relative flex flex-col items-center w-full py-14 text-white lg:mx-20 lg:pb-0 sm:mx-0 xs:mx-0">
+//                 <ul className="w-full align-center max-w-3xl mx-5 sm:mx-2 text-110 font-normal list-none grid grid-cols-2 gap-3 lg:text-105 sm:text-100 sm:pl-2 xs:text-100 sm:grid-cols-1 sm:w-2/3 xs:w-3/4 justify-center">
+//                     <li className="my-2 text-left">
+//                         {t('soft-skills.sentence1')}
+//                     </li>
+//                     <li className="my-2 text-left">
+//                         {t('soft-skills.sentence2')}
+//                     </li>
+//                     <li className="my-2 text-left">
+//                         {t('soft-skills.sentence3')}
+//                     </li>
+//                     <li className="my-2 text-left">
+//                         {t('soft-skills.sentence4')}
+//                     </li>
+//                     <li className="my-2 text-left">
+//                         {t('soft-skills.sentence5')}
+//                     </li>
+//                 </ul>
+//             </div>
+//         </section>
+//     );
+// }
+
+// export default React.memo(Skills);
+
+// "about": {
+//     "title": "Hi! I'm Matias Larralde and I'm thrilled that you are curious about my Portfolio.",
+//     "sentence1": "Having a diversified background ranging from restoration, event setup, and urban farming has allowed me to acquire many skills that I can use in web development, and my unique perspective can bring creativity and innovation to a team!",
+//     "sentence2": "This builds my thirst for learning and mastering new technologies, coding languages or frameworks. Each new day is a new challenge!",
+//     "sentence3": "I know that I have found my path into programming."
+// }
+// "about": {
+//     "title": "Hi! I'm Matias Larralde and I'm thrilled that you're taking a look at my Portfolio.",
+//     "sentence1": "I'm coming to the tech world with a very diversified background that has allowed me to acquire many skills that I can use in programming.",
+//     "sentence2": "This builds my thirst for learning and mastering new technologies; every new day is a new challenge!"
+//     // and no sentence3 "
+// }
+
+// useState, useEffect,
+
+// import { useInView } from 'react-intersection-observer';
+// import { motion } from 'framer-motion';
+
+//   const { ref, inView } = useInView();
+//   const [hasAnimated, setHasAnimated] = useState(false);
+
+//   useEffect(() => {
+//     if (inView && !hasAnimated) {
+//       setHasAnimated(true);
+//     }
+//   }, [inView, hasAnimated]);
+
+// <ul
+//             className="w-full max-w-3xl mx-6 text-110 font-normal list-none grid grid-cols-2 gap-3 lg:text-105 md:text-100 sm:text-95 xs:text-95 sm:grid-cols-1"
+//         //   animate={hasAnimated ? { y: 0, opacity: 1 } : { y: 20, opacity: 0.8 }}
+//         //   transition={{ duration: 0.85, ease: 'easeOut' }}
+//         >
+//           <li className="my-2 pl-3">{t('soft-skills.sentence1')}</li>
+//           <li className="my-2 pl-3">{t('soft-skills.sentence2')}</li>
+//           <li className="my-2 pl-3">{t('soft-skills.sentence3')}</li>
+//           <li className="my-2 pl-3">{t('soft-skills.sentence4')}</li>
+//           <li className="my-2 pl-3">{t('soft-skills.sentence5')}</li>
+//         </ul>
+//         {/* </motion.ul> */}

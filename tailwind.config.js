@@ -44,7 +44,20 @@ export default {
       'sm': {'max': '650px'},
       'xs': {'max': '480px'},
     },
-    extend: {},
+    // extend: {},
+    extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+    },
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
