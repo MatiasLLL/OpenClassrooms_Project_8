@@ -54,7 +54,7 @@ function ModalContent({
                         <div className="w-2/3 md:w-[70%] xs:w-full pb-0.5 m-2 sm:m-1 pl-1">
                             <Dialog.Title
                                 as="h3"
-                                className="font-medium mb-[0.8rem] md:mb-1 md:text-90 xs:text-95 xs:text-center xs:mt-px xs:mb-[0.28rem]"
+                                className="font-medium mb-[0.8rem] pl-2 md:mb-1 md:text-90 xs:text-95 xs:text-center xs:mt-px xs:mb-[0.28rem]"
                             >
                                 {t(`projects.${projectName}.title`)}
                             </Dialog.Title>
