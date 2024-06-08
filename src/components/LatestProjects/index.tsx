@@ -34,18 +34,16 @@ const logoMap: { [key: string]: string } = {
 function LatestProjects() {
     const { t } = useTranslation();
     const [showMore, setShowMore] = useState(false);
-    const [buttonActive, setButtonActive] = useState(false);
-
+    const [isActive, setIsActive] = useState(false);
     const displayedProjects = showMore
         ? projectsData
         : projectsData.slice(0, 6);
 
     const handleShowMore = () => {
         setShowMore(!showMore);
-        setButtonActive(true);
-        setTimeout(() => {
-            setButtonActive(false);
-        }, 100); // 1 seconde
+        setIsActive(true);
+        setTimeout(() => setIsActive(false), 50);
+        // setTimeout(() => setIsActive(false), 200);
     };
 
     return (
@@ -106,10 +104,10 @@ function LatestProjects() {
                     ))}
                 </AnimatePresence>
             </div>
-            <div className="flex justify-center items-center mt-2 mb-5 sm:mt-0">
+            <div className="flex justify-center items center mt-2 mb-5 sm:mt-0">
                 {projectsData.length > 6 && (
                     <button
-                        className={`cursor-pointer text-center mt-14 w-fit py-2 px-5 rounded-full border transition-all duration-100 ease-linear ${buttonActive ? 'border-white text-white hover:border-darkBlue hover:text-darkBlue' : 'border-white text-white hover:border-darkBlue hover:text-darkBlue'}`}
+                        className={`cursor-pointer text-center mt-14 w-fit py-2 px-5 rounded-full border border-white text-white transition-all duration-100 ease-linear ${isActive ? 'hover:border-darkBlue/70 hover:text-darkBlue/70 border-darkBlue/70 text-darkBlue/70' : 'hover:border-darkBlue/70 hover:text-darkBlue/70'}`}
                         onClick={handleShowMore}
                     >
                         {showMore
