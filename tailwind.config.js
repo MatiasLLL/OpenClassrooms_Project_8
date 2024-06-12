@@ -62,4 +62,12 @@ export default {
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
   ],
+  variants: {
+    extend: {
+      backgroundColor: ['hover', 'focus', 'responsive'],
+      textColor: ['hover', 'focus', 'responsive'],
+      borderColor: ['hover', 'focus', 'responsive'],
+      // Add other hover states if necessary
+    },
+  },
 }
