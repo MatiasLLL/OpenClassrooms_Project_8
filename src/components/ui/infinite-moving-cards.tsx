@@ -18,7 +18,7 @@ interface InfiniteMovingCardsProps {
 function InfiniteMovingCards({
     items,
     direction = 'left',
-    speed = 'normal',
+    speed = 'fast',
     pauseOnHover = true,
     className,
 }: InfiniteMovingCardsProps) {

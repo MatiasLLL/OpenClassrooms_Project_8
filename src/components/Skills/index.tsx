@@ -34,13 +34,15 @@ interface SkillsCardProps {
 
 function Skills() {
     const { t } = useTranslation();
-    const [speed, setSpeed] = useState<'fast' | 'normal'>('normal');
+    const [speed, setSpeed] = useState<'fast' | 'normal'>('fast');
 
     useEffect(() => {
-        const mediaQuery: any = window.matchMedia('(min-width: 770px)');
+        // const mediaQuery: any = window.matchMedia('(min-width: 770px)');
+        const mediaQuery: any = window.matchMedia('(max-width: 770px)');
 
         const handleChange = (event: MediaQueryListEvent) => {
-            setSpeed(event.matches ? 'normal' : 'fast');
+            // setSpeed(event.matches ? 'normal' : 'fast');
+            setSpeed(event.matches ? 'fast' : 'normal');
         };
 
         handleChange(mediaQuery); // Set initial speed based on current window size
