@@ -37,15 +37,14 @@ function Skills() {
     const [speed, setSpeed] = useState<'fast' | 'normal'>('fast');
 
     useEffect(() => {
-        // const mediaQuery: any = window.matchMedia('(min-width: 770px)');
-        const mediaQuery: any = window.matchMedia('(max-width: 770px)');
+        const mediaQuery: MediaQueryList =
+            window.matchMedia('(max-width: 770px)');
+
+        setSpeed(mediaQuery.matches ? 'fast' : 'normal');
 
         const handleChange = (event: MediaQueryListEvent) => {
-            // setSpeed(event.matches ? 'normal' : 'fast');
             setSpeed(event.matches ? 'fast' : 'normal');
         };
-
-        handleChange(mediaQuery); // Set initial speed based on current window size
 
         mediaQuery.addEventListener('change', handleChange);
 
