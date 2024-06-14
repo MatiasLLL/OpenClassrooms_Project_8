@@ -43,7 +43,8 @@ function Skills() {
         setSpeed(mediaQuery.matches ? 'fast' : 'normal');
 
         const handleChange = (event: MediaQueryListEvent) => {
-            setSpeed(event.matches ? 'fast' : 'normal');
+            setSpeed(event.matches ? 'fast' : 'fast');
+            setSpeed(!event.matches ? 'normal' : 'fast');
         };
 
         mediaQuery.addEventListener('change', handleChange);
@@ -92,8 +93,9 @@ function Skills() {
                 pauseOnHover={false}
                 className="mt-1"
             />
-            <div className="relative flex flex-col items-center w-full minxl:py-20 py-14 text-white lg:mx-0 lg:pb-0 sm:mx-0 xs:mx-0">
-                <ul className="w-full align-center max-w-3xl px-24 lg:px-0 sm:mx-2 text-110 md:mx-0 md:px-16 ml-16 font-normal list-none grid grid-cols-2 gap-3 lg:text-105 sm:text-100 sm:px-20 xs:px-14 xs:text-100 sm:grid-cols-1 sm:w-full justify-center">
+            {/* lg:mx-0 sm:mx-0 xs:mx-0 */}
+            <div className="relative flex flex-col items-center w-full minxl:py-20 py-14 text-white lg:pb-0 ml-1">
+                <ul className="w-full align-center //max-w-3xl px-24 lg:px-0 sm:mx-2 text-110 md:mx-0 md:px-16 ml-16 font-normal list-none grid grid-cols-2 gap-3 lg:text-105 sm:text-100 sm:px-20 xs:px-14 xs:text-100 sm:grid-cols-1 sm:w-full justify-center">
                     {softSkills.map((skill, index) => (
                         <li
                             key={index}
