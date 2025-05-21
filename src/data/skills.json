@@ -1,12 +1,57 @@
 [
-    { "icon": "SolidityLogo", "iconAlt": "logo Solidity", "text": "Solidity Hardhat" },
-    { "icon": "PythonLogo", "iconAlt": "logo Python", "text": "Python Flask" },
-    { "icon": "NodeLogo", "iconAlt": "logo Node", "text": "Node Express" },
-    { "icon": "ReactLogo", "iconAlt": "logo React", "text": "React" },
-    { "icon": "TailwindLogo", "iconAlt": "logo Tailwind", "text": "Tailwind" },
-    { "icon": "SassLogo", "iconAlt": "logo Sass", "text": "Sass" },
-    { "icon": "TypeScriptLogo", "iconAlt": "logo TypeScript", "text": "TypeScript" },
-    { "icon": "JavaScriptLogo", "iconAlt": "logo JavaScript", "text": "JavaScript" },
-    { "icon": "CSSLogo", "iconAlt": "logo CSS", "text": "CSS" },
-    { "icon": "HTMLLogo", "iconAlt": "logo HTML", "text": "HTML" }
+    {
+        "icon": "DjangoLogo",
+        "iconAlt": "logo Django",
+        "text": "Django"
+    },
+    {
+        "icon": "PythonLogo",
+        "iconAlt": "logo Python",
+        "text": "Python"
+    },
+    {
+        "icon": "ExpressLogo",
+        "iconAlt": "logo Express",
+        "text": "Express"
+    },
+    {
+        "icon": "NodeLogo",
+        "iconAlt": "logo Node",
+        "text": "Node.js"
+    },
+    {
+        "icon": "ReactLogo",
+        "iconAlt": "logo React",
+        "text": "React"
+    },
+    {
+        "icon": "TailwindLogo",
+        "iconAlt": "logo Tailwind",
+        "text": "Tailwind"
+    },
+    {
+        "icon": "SassLogo",
+        "iconAlt": "logo Sass",
+        "text": "Sass"
+    },
+    {
+        "icon": "TypeScriptLogo",
+        "iconAlt": "logo TypeScript",
+        "text": "TypeScript"
+    },
+    {
+        "icon": "JavaScriptLogo",
+        "iconAlt": "logo JavaScript",
+        "text": "JavaScript"
+    },
+    {
+        "icon": "CSSLogo",
+        "iconAlt": "logo CSS",
+        "text": "CSS"
+    },
+    {
+        "icon": "HTMLLogo",
+        "iconAlt": "logo HTML",
+        "text": "HTML"
+    }
 ]

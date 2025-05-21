@@ -79,7 +79,7 @@ function InfiniteMovingCards({
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    'flex min-w-full shrink-0 gap-4 sm:gap-0 w-max flex-nowrap md:py-2',
+                    'flex min-w-full shrink-0 gap-4 sm:gap-0 w-full flex-nowrap md:py-2',
                     start && 'animate-scroll',
                     pauseOnHover &&
                         'hover:[animation-play-state:paused] md:hover:[animation-play-state:running] sm:hover:[animation-play-state:running]'
@@ -87,7 +87,7 @@ function InfiniteMovingCards({
             >
                 {items.map((item, idx) => (
                     <li
-                        className="w-[100px] sm:w-[90px] relative rounded-2xl flex-shrink-0 px-8 md:px-8 py-3 flex flex-col items-center justify-center text-105 sm:text-90 my-5 lg:my-7 lg:py-0.5 sm:my-5 xs:my-3"
+                        className="w-[100px] sm:w-[90px] relative rounded-2xl flex-shrink-0 px-8 sm:px-2 py-3 flex flex-col items-center justify-center text-105 sm:text-90 my-5 lg:my-7 lg:py-0.5 sm:my-5 xs:my-3"
                         key={idx}
                     >
                         <div className="w-[52px] h-[40px] flex justify-center items-center mb-[0.55rem]">

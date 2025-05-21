@@ -11,28 +11,6 @@
         }
     },
     {
-        "logo": "logoSpaceDolphin",
-        "logoAlt": "SpaceDolphin",
-        "content": {
-            "logo": "logoSpaceDolphin",
-            "logoAlt": "SpaceDolphin",
-            "projectName": "spacedolphin",
-            "websiteLink": "https://spacedolphin.xyz",
-            "gitHubLink": "https://github.com/MatiasLLL/SpaceDolphin-Token"
-        }
-    },
-    {
-        "logo": "logoPAWA",
-        "logoAlt": "PAWA",
-        "content": {
-            "logo": "logoPAWA",
-            "logoAlt": "PAWA",
-            "projectName": "pawa",
-            "websiteLink": "https://pawatoken.xyz",
-            "gitHubLink": "https://github.com/MatiasLLL/Pawa-Token"
-        }
-    },
-    {
         "logo": "logoPortfolio",
         "logoAlt": "Portfolio",
         "content": {
