@@ -7,20 +7,19 @@
         "language": "EN/FR"
     },
     "about": {
-        "title": "Hi! I'm Matias Larralde and I'm thrilled that you're taking a look at my Portfolio.",
-        "sentence1": "I came to the tech world with a pretty diversified background that has allowed me to acquire many skills that I apply now to programming.",
-        "sentence2": "This builds my thirst for learning and mastering new technologies; every new day is a new challenge!"
+        "title": "Hi! I'm Matias Larralde, fullstack developer — welcome to my portfolio.",
+        "sentence1": "Passionate about tech, I see code as a way to express my creativity.",
+        "sentence2": "Resilient and versatile, I navigate challenges with focus and clarity"
     },
     "skills": {
         "title2": "Skills"
-        
     },
-    "soft-skills" : {
-        "sentence1": "Solving problems and building solutions",
-        "sentence2": "Self-learning and overcoming fallbacks",
-        "sentence3": "Working well in a team",
-        "sentence4": "Having a creative mindset",
-        "sentence5": "Having attention to detail"
+    "soft-skills": {
+        "sentence1": "Analytical thinking",
+        "sentence2": "Turning problems into concrete solutions",
+        "sentence3": "Strong team collaboration",
+        "sentence4": "Creative mindset",
+        "sentence5": "Attention to detail"
     },
     "projects": {
         "title2": "Latest Projects",
@@ -28,52 +27,52 @@
         "button-show-less": "Show Less",
         "github-link": "Link to the GitHub repository",
         "booki": {
-            "title" : "OpenClassrooms - Project 2",
+            "title": "OpenClassrooms - Project 2",
             "description": "This was my first project at OpenClassrooms bootcamp. I turned a mockup into a responsive web page using HTML and CSS, ensuring web semantics, compatibility with major browsers, and code validity with W3C.",
             "website-link": "Link to the website"
         },
         "sophie-bluel": {
-            "title" : "OpenClassrooms - Project 3",
+            "title": "OpenClassrooms - Project 3",
             "description": "I used JavaScript to implement features such as dynamically fetching and filtering API data. I also integrated a login page and a modal for adding, modifying, and deleting data both on the page and API.",
             "website-link": "Link to the website"
         },
         "qwenta": {
-            "title" : "OpenClassrooms - Project 4",
+            "title": "OpenClassrooms - Project 4",
             "description": "This project involved planning website development. I wrote technical specifications, researched various technical aspects, and set up a Kanban board for project management.",
             "website-link": "Click to download the project"
         },
         "nina-carducci": {
-            "title" : "OpenClassrooms - Project 5",
+            "title": "OpenClassrooms - Project 5",
             "description": "I optimized the website's images, code, and structure. I debugged functionalities, added local SEO and social media integration using meta tags and Schema.org.",
             "website-link": "Link to the website"
         },
         "kasa": {
-            "title" : "OpenClassrooms - Project 6",
+            "title": "OpenClassrooms - Project 6",
             "description": "In this React project, I used React Router for navigation, created React components, added CSS animations with SASS, and implemented a 404 page.",
             "website-link": "Link to the website"
         },
         "mon-vieux-grimoire": {
-            "title" : "OpenClassrooms - Project 7",
+            "title": "OpenClassrooms - Project 7",
             "description": "This time, I built an Express server, a RESTful API, set up an authentication system, and implemented secure CRUD operations.",
             "website-link": "Link to the website"
         },
         "my-portfolio": {
-            "title" : "OpenClassrooms - Project 8",
+            "title": "OpenClassrooms - Project 8",
             "description": "My portfolio was my first project without a roadmap. I initialized it with Vite, developed it with React, TypeScript, and Tailwind, and implemented translation with the i18n library.",
             "website-link": "You already are on my portfolio!"
         },
         "pawa": {
-            "title" : "PAWA Token",
+            "title": "PAWA Token",
             "description": "This is the first ERC-20 token I created to learn Solidity. I used Hardhat and OpenZeppelin libraries to build it, and deployed it on the Polygon network using Infura as the RPC node provider.",
             "website-link": "Link to the website"
         },
         "spacedolphin": {
-            "title" : "SpaceDolphin",
+            "title": "SpaceDolphin",
             "description": "SpaceDolphin is my second memecoin project. I deployed it on the Base network using Alchemy as the RPC node provider. I also plan to create SpaceDolphin NFTs in the future.",
             "website-link": "Link to the website"
         },
         "flashloan": {
-            "title" : "Flash Loan",
+            "title": "Flash Loan",
             "description": "I developed a flash loan arbitrage bot on the Polygon Network using Aave and Ethers.js to exploit price discrepancies across exchanges. I created a flash loan contract and scripts to detect arbitrage opportunities and automate smart contract interactions. This project showcased my skills in smart contract development and enhanced my understanding of DeFi market dynamics.",
             "website-link": ""
         }
@@ -99,6 +98,6 @@
         "sentence3": "If you have any questions or concerns about our privacy policy, please contact us at matias.larralde97[at]gmail.com."
     },
     "link": {
-        "home" : "Return to the main page"
+        "home": "Return to the main page"
     }
 }

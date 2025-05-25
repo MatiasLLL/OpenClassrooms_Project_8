@@ -1,4 +1,3 @@
-
 {
     "categories": {
         "about": "A Propos",
@@ -8,20 +7,19 @@
         "language": "FR/EN"
     },
     "about": {
-        "title": "Bonjour ! Je suis Matias Larralde et je suis ravi que vous jetiez un coup d'œil à mon portfolio.",
-        "sentence1": "Arrivé dans le monde de la tech avec un parcours diversifié, j'ai acquis de nombreuses compétences que j'applique maintenant au code.",
-        "sentence2": "Cela nourrit ma soif d'apprendre et de maîtriser de nouvelles technologies ; chaque jour est un nouveau défi !"
+        "title": "Bonjour ! Je suis Matias Larralde, développeur fullstack, ravi de vous accueillir sur mon portfolio.",
+        "sentence1": "Passionné par le monde de la tech, le code est un moyen d'expression de ma créativité.",
+        "sentence2": "Résilient et versatile, je garde le cap tout en m'adaptant aux réalités du terrain."
     },
     "skills": {
         "title2": "Compétences"
-        
     },
-    "soft-skills" : {
-        "sentence1": "Aimer résoudre des problèmes et trouver des solutions",
-        "sentence2": "Savoir apprendre en autonomie",
-        "sentence3": "Savoir travailler en équipe",
-        "sentence4": "Avoir un esprit créatif",
-        "sentence5": "Avoir le sens du détail"
+    "soft-skills": {
+        "sentence1": "Analyse et prise de recul",
+        "sentence2": "Trouver des solutions concrètes",
+        "sentence3": "Collaborer efficacement",
+        "sentence4": "Esprit créatif",
+        "sentence5": "Sens du détail"
     },
     "projects": {
         "title2": "Dernier Projets",
@@ -29,52 +27,52 @@
         "button-show-less": "Afficher moins",
         "github-link": "Lien vers le repository GitHub",
         "booki": {
-            "title" : "OpenClassrooms - Projet 2",
+            "title": "OpenClassrooms - Projet 2",
             "description": "Ce fut le premier projet de ma formation OpenClassrooms. J'ai transformé une maquette en une page web responsive en utilisant HTML et CSS, en veillant à respecter la sémantique web, la compatibilité avec les principaux navigateurs, et la validité du code avec les validateurs W3C.",
             "website-link": "Lien vers le site"
         },
         "sophie-bluel": {
-            "title" : "OpenClassrooms - Projet 3",
+            "title": "OpenClassrooms - Projet 3",
             "description": "J'ai implémenté en JavaScript des fonctionnalités telles que la récupération dynamique et le filtrage des données via une API; intégré une page de connexion ainsi qu'une modale pour ajouter, modifier et supprimer des données à la fois sur la page et en base de données.",
             "website-link": "Lien vers le site"
         },
         "qwenta": {
-            "title" : "OpenClassrooms - Projet 4",
+            "title": "OpenClassrooms - Projet 4",
             "description": "Ce projet impliquait la planification du développement d'un site web. J'ai rédigé les spécifications techniques, recherché les technologies nécessaires, et mis en place un tableau Kanban pour la gestion de projet.",
             "website-link": "Cliquez pour télécharger le projet"
         },
         "nina-carducci": {
-            "title" : "OpenClassrooms - Projet 5",
+            "title": "OpenClassrooms - Projet 5",
             "description": "J'ai optimisé les images, le code et la structure du site web. J'ai également débugué des fonctionnalités, ajouté le SEO local et l'intégration des réseaux sociaux en utilisant des balises meta et Schema.org.",
             "website-link": "Lien vers le site"
         },
         "kasa": {
-            "title" : "OpenClassrooms - Projet 6",
+            "title": "OpenClassrooms - Projet 6",
             "description": "Pour ce projet React, j'ai utilisé React Router pour configurer la navigation, créé des composants React, ajouté des animations CSS avec SASS et implémenté une page 404.",
             "website-link": "Lien vers le site"
         },
         "mon-vieux-grimoire": {
-            "title" : "OpenClassrooms - Projet 7",
+            "title": "OpenClassrooms - Projet 7",
             "description": "J'ai développé un serveur Express, une API RESTful, mis en place un système d'authentification et implémenté des opérations CRUD sécurisées.",
             "website-link": "Lien vers le site"
         },
         "my-portfolio": {
-            "title" : "OpenClassrooms - Projet 8",
+            "title": "OpenClassrooms - Projet 8",
             "description": "Mon portfolio est mon premier projet sans plan d'action. Je l'ai initialisé avec Vite, puis conçu avec React, TypeScript et Tailwind, et implémenté la traduction avec la librairie i18n.",
             "website-link": "Vous êtes déjà sur le portfolio !"
         },
         "pawa": {
-            "title" : "PAWA Token",
+            "title": "PAWA Token",
             "description": "C'est le premier token que j'ai créé pour apprendre Solidity. J'ai utilisé les librairies Hardhat et OpenZeppelin pour le construire et l'ai déployé sur le réseau Polygon en utilisant Infura comme fournisseur de nœuds RPC.",
             "website-link": "Lien vers le site"
         },
         "spacedolphin": {
-            "title" : "SpaceDolphin",
-            "description": "SpaceDolphin est mon deuxième projet de memecoin. Je l'ai déployé sur le réseau Base avec le service RPC d'Alchemy. Je prévois également de créer des NFTs SpaceDolphin à l'avenir.",            
+            "title": "SpaceDolphin",
+            "description": "SpaceDolphin est mon deuxième projet de memecoin. Je l'ai déployé sur le réseau Base avec le service RPC d'Alchemy. Je prévois également de créer des NFTs SpaceDolphin à l'avenir.",
             "website-link": "Lien vers le site"
         },
         "flashloan": {
-            "title" : "Flash Loan",
+            "title": "Flash Loan",
             "description": "J'ai développé un bot d'arbitrage de flash loan sur le réseau Polygon en utilisant Aave et Ethers.js pour exploiter les écarts de prix entre les échanges. J'ai créé le contrat de mon flash loan et des scripts pour détecter les opportunités d'arbitrage et automatiser les interactions avec mon Flash Loan. Ce projet met en valeur mes compétences en développement de smart contracts et ma compréhension des dynamiques de marché DeFi.",
             "website-link": ""
         }
@@ -89,7 +87,7 @@
         "title": "Mentions Légales",
         "sentence1": "Directeur de la publication et webmaster: Matias Larralde",
         "sentence2": "Adresse: 94 rue de Varenne, 75007, Paris, FRANCE",
-        "sentence3": "Le site est hébergé par Railway Corporation dont l’adresse est la suivante:",
+        "sentence3": "Le site est hébergé par Railway Corporation dont l'adresse est la suivante:",
         "sentence4": "Railway Corporation, 80 Rossi Avenue, San Francisco, CA 94118, US",
         "sentence5": "Téléphone: 347-757-2499"
     },
@@ -100,6 +98,6 @@
         "sentence3": "Si vous avez des questions ou des préoccupations concernant notre politique de confidentialité, veuillez nous contacter à matias.larralde97[at]gmail.com."
     },
     "link": {
-        "home" : "Retourner à la page principale"
-    }  
+        "home": "Retourner à la page principale"
+    }
 }
