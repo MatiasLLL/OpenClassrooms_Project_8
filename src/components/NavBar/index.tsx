@@ -40,7 +40,7 @@ function NavBar() {
             >
                 <i
                     // group-[.active]/link:bg-darkBlue/10
-                    className="group/icon rounded-full border border-white/10 relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto transition-all duration-100 ease-linear cursor-pointer xs:h-11 xs:w-11 group-hover/link:transition-all group-hover/link:duration-100 group-hover/link:ease-linear minlg:group-hover/link:bg-darkBlue/10 group-[.active]/link:transition-all group-[.active]/link:duration-100 group-[.active]/link:ease-linear "
+                    className="group/icon rounded-full border border-white/40 relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto transition-all duration-100 ease-linear cursor-pointer xs:h-11 xs:w-11 group-hover/link:transition-all group-hover/link:duration-100 group-hover/link:ease-linear minlg:group-hover/link:bg-darkBlue/10 group-[.active]/link:transition-all group-[.active]/link:duration-100 group-[.active]/link:ease-linear "
                     style={anchor === '#contact' ? { paddingRight: '2px' } : {}}
                 >
                     {icon}
@@ -94,9 +94,10 @@ function NavBar() {
         window.addEventListener('hashchange', handleHashChange);
         return () => window.removeEventListener('hashchange', handleHashChange);
     }, [handleHashChange]);
-
+    // [#2e3a6045]
     return (
-        <nav className="group/menu z-50 bg-darkBlue text-white/90 fixed text-105 top-0 right-0 py-3 h-screen w-20 shadow-sm shadow-blue hover:w-52 hover:duration-100 text-center lg:fixed lg:bottom-0 lg:left-0 lg:flex-row lg:top-auto lg:px-4 lg:py-0 lg:w-screen lg:h-20 lg:hover:w-screen">
+        // <nav className="group/menu z-50 bg-[#2236764f] text-white/70 fixed text-105 top-0 right-0 py-3 h-screen w-20 shadow-sm shadow-blue hover:w-[12.65rem] hover:duration-100 text-center lg:bg-blue lg:shadow-stone lg:fixed lg:bottom-0 lg:left-0 lg:flex-row lg:top-auto lg:px-4 lg:py-0 lg:w-screen lg:h-20 lg:hover:w-screen">
+        <nav className="group/menu z-50 bg-gradient-to-b from-darkBlue via-darkBlue to-blue text-white/70 fixed text-105 top-0 right-0 py-3 h-screen w-20 shadow-sm shadow-blue hover:w-[12.65rem] hover:duration-100 text-center lg:bg-blue lg:shadow-stone lg:fixed lg:bottom-0 lg:left-0 lg:flex-row lg:top-auto lg:px-4 lg:py-0 lg:w-screen lg:h-20 lg:hover:w-screen">
             <div className="flex flex-col h-full justify-between lg:flex-row">
                 <div className="navbar-top lg:flex lg:flex-row lg:justify-around lg:w-3/5">
                     {navItems.map(item => (

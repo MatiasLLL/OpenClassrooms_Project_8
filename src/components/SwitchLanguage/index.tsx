@@ -22,7 +22,7 @@ const SwitchLanguage: React.FC = () => {
                 aria-label="SwitchLanguage"
                 // aria-label={t('aria.switchLanguage')}
             >
-                <i className="group/icon rounded-full border border-white/10 shadow-sm relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto transition-all duration-100 ease-linear cursor-pointer xs:h-11 xs:w-11 minlg:group-hover/link:transition-all minlg:group-hover/link:duration-100 minlg:group-hover/link:ease-linear minlg:group-hover/link:bg-darkBlue/10">
+                <i className="group/icon rounded-full border border-white/40 shadow-sm relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto transition-all duration-100 ease-linear cursor-pointer xs:h-11 xs:w-11 minlg:group-hover/link:transition-all minlg:group-hover/link:duration-100 minlg:group-hover/link:ease-linear minlg:group-hover/link:bg-darkBlue/10">
                     <MdLanguage size="29" />
                 </i>
                 <span className="hidden relative transition-all text-center cursor-pointer ml-[0.8rem] group-hover/menu:flex group-hover/menu:text-center group-hover/menu:sm:hidden group-hover/menu:md:hidden group-hover/menu:lg:hidden group-hover/link:font-medium">
