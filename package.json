@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "serve -s dist -l tcp://0.0.0.0:${PORT:-3000}",
+    "start": "serve -s dist -l tcp://0.0.0.0:${PORT:-8080}",
     "dev": "bunx --bun vite",
     "build": "bunx --bun tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",

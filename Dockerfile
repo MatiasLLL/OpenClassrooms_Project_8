@@ -9,4 +9,4 @@ COPY . .
 RUN bun run build
 RUN bun add -g serve
 
-CMD ["sh", "-c", "serve -s dist -l tcp://0.0.0.0:${PORT:-3000}"]
+CMD ["sh", "-c", "serve -s dist -l tcp://0.0.0.0:${PORT:-8080}"]
